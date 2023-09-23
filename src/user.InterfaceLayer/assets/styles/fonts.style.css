@@ -1,0 +1,20 @@
+/* @font-face {
+   font-family: 'Raleway';
+   src: url('../fonts/Poppins-SemiBold.woff') format('woff2'),
+    url('../fonts/Poppins-SemiBold.eot'),
+    url('../fonts/Poppins-SemiBold.woff') format('woff'),
+    url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+} */
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.ttf');
+    src: local('Poppins Bold'), local('Poppins-Bold'),
+        url('Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Poppins-Bold.woff2') format('woff2'),
+        url('Poppins-Bold.woff') format('woff'),
+        url('Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
