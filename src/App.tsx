@@ -1,5 +1,7 @@
+import { MainPage } from "./user.InterfaceLayer/Pages/Main.Page";
+
 function App() {
-  return <>qq</>;
+  return <MainPage />;
 }
 
 export default App;

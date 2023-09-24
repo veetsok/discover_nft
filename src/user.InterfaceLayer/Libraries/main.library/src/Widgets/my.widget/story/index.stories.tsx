@@ -1,9 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import MyWidget from "../index";
+import MyWidget from "..";
+
+const TestWidget = ({ type, title, ...props }: TestProps) => {
+  return <MyWidget />;
+};
 
 const meta = {
   title: "Example/MyWidget",
-  component: MyWidget,
+  component: TestWidget,
   tags: ["widget"],
   parameters: {
     layout: "centered",

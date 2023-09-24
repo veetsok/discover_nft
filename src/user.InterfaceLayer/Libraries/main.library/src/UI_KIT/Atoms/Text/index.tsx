@@ -27,6 +27,9 @@ const Text: React.FC<TextType> = (props: TextType) => {
     case TextEnum.enum_H6Text: {
       return <ST.TextH6 title={title} children={children} />;
     }
+    case TextEnum.enum_aText: {
+      return <ST.aText title={title} children={children} />;
+    }
     default: {
       return <ST.Error>Ошибка</ST.Error>;
     }

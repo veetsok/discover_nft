@@ -1,3 +1,3 @@
-const test = {};
+import styled from "styled-components";
 
-export default test;
+export const TextH2 = styled.h2<Text>``;

@@ -5,18 +5,20 @@ import { ButtonEnum } from "./enum";
 import { IButtonPropsDefault } from "./mock";
 
 const Button: React.FC<ButtonType> = (props: ButtonType) => {
-  const { children, type, isLoading, value } = props;
+  const { children, type, isLoading, ...otherProps } = props;
   if (props.isLoading) return <>Loading</>;
   if (props.isError) return <ST.Error>Ошибка</ST.Error>;
   switch (type) {
     case ButtonEnum.enum_blackButton: {
-      return <ST.ButtonBlack isLoading={isLoading} children={children} value={value}/>;
+      return <ST.ButtonBlack isLoading={isLoading} children={children} />;
     }
     case ButtonEnum.enum_whiteButton: {
-      return <ST.ButtonWhite isLoading={isLoading} children={children} value={value} />;
+      return <ST.ButtonWhite isLoading={isLoading} children={children} />;
     }
     case ButtonEnum.enum_categoryButton: {
-      return <ST.ButtonCategory isLoading={isLoading} children={children} value={value}/>;
+      return (
+        <ST.ButtonCategory isLoading={isLoading} children={children} {...otherProps} />
+      );
     }
     default: {
       return <ST.Error>Ошибка</ST.Error>;
