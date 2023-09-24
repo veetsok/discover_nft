@@ -1,7 +1,7 @@
 import React from "react";
-import NavMenu from "../../Molecules/nav_menu";
 import * as ST from "./styled";
-import NavInput from "../../Molecules/nav_input";
+import NavMenu from "../../Molecules/NavMenu";
+import NavInput from "../../Molecules/NavInput";
 
 interface NavbarProps {}
 

@@ -20,6 +20,24 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
         <ST.ButtonCategory isLoading={isLoading} children={children} {...otherProps} />
       );
     }
+    case ButtonEnum.enum_leftArrowButton: {
+      return (
+        <ST.ButtonLeftArrowButton
+          isLoading={isLoading}
+          children={children}
+          {...otherProps}
+        />
+      );
+    }
+    case ButtonEnum.enum_rightArrowButton: {
+      return (
+        <ST.ButtonRightArrowButton
+          isLoading={isLoading}
+          children={children}
+          {...otherProps}
+        />
+      );
+    }
     default: {
       return <ST.Error>Ошибка</ST.Error>;
     }

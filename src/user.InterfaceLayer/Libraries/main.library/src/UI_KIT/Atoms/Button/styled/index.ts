@@ -32,6 +32,7 @@ ${commonButtonStyles}
   line-height: ${commonButtonFonts[ButtonEnum.enum_whiteButton].lineHeight};
   text-transform: ${commonButtonFonts[ButtonEnum.enum_whiteButton].textTransform};
 `;
+
 export const ButtonCategory = styled.button<Button>`
 
 font-family:${FontsEnum.Poppins}
@@ -40,4 +41,12 @@ font-family:${FontsEnum.Poppins}
   font-weight: ${commonButtonFonts[ButtonEnum.enum_categoryButton].fontWeight};
   text-transform: ${commonButtonFonts[ButtonEnum.enum_categoryButton].textTransform};
 `;
+
+export const ButtonLeftArrowButton = styled.button<Button>`
+  background: url("");
+`;
+
+export const ButtonRightArrowButton = styled.button<Button>``;
+
 export const Error = styled.button<Button>``;
+

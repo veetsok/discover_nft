@@ -4,3 +4,4 @@ enum FontsEnum {
 }
 
 export default FontsEnum;
+

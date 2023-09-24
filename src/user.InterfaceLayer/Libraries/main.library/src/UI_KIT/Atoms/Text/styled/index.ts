@@ -2,19 +2,49 @@ import styled from "styled-components";
 import commonTextFonts from "./fonts";
 import { TextEnum } from "../enum";
 import FontsEnum from "../../../../constants/fonts";
+import Colors from "../../../../constants/colors";
 
 interface Text {
   isLoading?: boolean;
 }
 
 export const TextH1 = styled.h1<Text>`
-  color: #000;
+  color: ${Colors.BLACK};
+  font-family: ${FontsEnum.Poppins}, sans-serif;
+  font-size: ${commonTextFonts[TextEnum.enum_H1Text].fontSize};
+  font-style: ${commonTextFonts[TextEnum.enum_H1Text].fontStyle};
+  font-weight: ${commonTextFonts[TextEnum.enum_H1Text].fontWeight};
+  line-height: ${commonTextFonts[TextEnum.enum_H1Text].lineHeight};
 `;
+
 export const TextH2 = styled.h2<Text>``;
-export const TextH3 = styled.h3<Text>``;
-export const TextH4 = styled.h4<Text>``;
+
+export const TextH3 = styled.h3<Text>`
+  font-family: ${FontsEnum.Poppins}, sans-serif;
+  font-size: ${commonTextFonts[TextEnum.enum_H3Text].fontSize};
+  font-style: ${commonTextFonts[TextEnum.enum_H3Text].fontStyle};
+  font-weight: ${commonTextFonts[TextEnum.enum_H3Text].fontWeight};
+  line-height: ${commonTextFonts[TextEnum.enum_H3Text].lineHeight};
+`;
+
+export const TextH4 = styled.h4<Text>`
+  font-family: ${FontsEnum.Poppins}, sans-serif;
+  font-size: ${commonTextFonts[TextEnum.enum_H4Text].fontSize};
+  font-style: ${commonTextFonts[TextEnum.enum_H4Text].fontStyle};
+  font-weight: ${commonTextFonts[TextEnum.enum_H4Text].fontWeight};
+  line-height: ${commonTextFonts[TextEnum.enum_H4Text].lineHeight};
+`;
+
 export const TextH5 = styled.h5<Text>``;
-export const TextH6 = styled.h6<Text>``;
+
+export const TextH6 = styled.h6<Text>`
+  font-family: ${FontsEnum.Poppins}, sans-serif;
+  font-size: ${commonTextFonts[TextEnum.enum_H6Text].fontSize};
+  font-style: ${commonTextFonts[TextEnum.enum_H6Text].fontStyle};
+  font-weight: ${commonTextFonts[TextEnum.enum_H6Text].fontWeight};
+  line-height: ${commonTextFonts[TextEnum.enum_H6Text].lineHeight};
+`;
+
 export const aText = styled.a<Text>`
   cursor: pointer;
   margin: 0 27px;
