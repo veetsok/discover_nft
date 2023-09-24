@@ -1,3 +1,8 @@
 import styled from "styled-components";
 
-export const TextH2 = styled.h2<Text>``;
+export const Navbar = styled.div`
+  display: flex;
+  padding: 45px 0;
+  justify-content: space-between;
+  align-items: center;
+`;

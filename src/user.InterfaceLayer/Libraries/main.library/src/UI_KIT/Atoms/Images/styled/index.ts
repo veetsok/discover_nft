@@ -4,5 +4,7 @@ interface Image {
   isLoading?: boolean;
 }
 
-export const Image = styled.img<Image>``;
+export const Image = styled.img<Image>`
+  width: 100%;
+`;
 export const Error = styled.img<Image>``;

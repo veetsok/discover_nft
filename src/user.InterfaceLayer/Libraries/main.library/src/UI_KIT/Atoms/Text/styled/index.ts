@@ -16,6 +16,8 @@ export const TextH4 = styled.h4<Text>``;
 export const TextH5 = styled.h5<Text>``;
 export const TextH6 = styled.h6<Text>``;
 export const aText = styled.a<Text>`
+  cursor: pointer;
+  margin: 0 27px;
   color: #606060;
   font-family: ${FontsEnum.Inter};
   font-size: ${commonTextFonts[TextEnum.enum_aText].fontSize};
