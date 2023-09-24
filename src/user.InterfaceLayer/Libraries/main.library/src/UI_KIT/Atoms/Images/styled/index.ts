@@ -1,3 +1,8 @@
-const test = {};
+import styled from "styled-components";
 
-export default test;
+interface Image {
+  isLoading?: boolean;
+}
+
+export const Image = styled.img<Image>``;
+export const Error = styled.img<Image>``;

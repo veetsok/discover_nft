@@ -1,3 +1,3 @@
-const test = {};
-
-export default test;
+export enum ImageEnum {
+  "enum_defaultImage" = "defaultImage",
+}
