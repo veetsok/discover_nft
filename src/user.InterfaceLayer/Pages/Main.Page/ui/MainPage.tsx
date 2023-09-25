@@ -1,3 +1,4 @@
+import RatingTable from "../../../Components/RatingTable.component.bll";
 import WeeklySlider from "../../../Components/WeeklySlider.component.bll";
 import HeroHeader from "../../../Libraries/main.library/src/UI_KIT/Cells/HeroHeader";
 import Navbar from "../../../Libraries/main.library/src/UI_KIT/Cells/Navbar";
@@ -9,6 +10,7 @@ const MainPage: React.FC = () => {
       <Navbar />
       <HeroHeader />
       <WeeklySlider />
+      <RatingTable />
     </ST.Container>
   );
 };

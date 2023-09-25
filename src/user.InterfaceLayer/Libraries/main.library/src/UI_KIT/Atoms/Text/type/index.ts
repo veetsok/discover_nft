@@ -6,7 +6,7 @@ import { TextEnum } from "../enum";
 
 type ExtendsCommonType = Pick<
   ICommonComponentProps,
-  CommonComponentsProps.title | CommonComponentsProps.defaultValue
+  CommonComponentsProps.title | CommonComponentsProps.key
 >;
 
 export interface TextType extends ExtendsCommonType {

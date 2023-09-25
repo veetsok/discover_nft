@@ -15,6 +15,7 @@ export enum CommonComponentsProps {
   disabled = "disabled",
   label = "label",
   id = "id",
+  key = "key",
   src = "src",
   alt = "alt",
   className = "className",
@@ -63,6 +64,7 @@ export interface ICommonComponentProps {
   [CommonComponentsProps.className]?: string;
   [CommonComponentsProps.style]?: React.CSSProperties;
   [CommonComponentsProps.required]?: boolean;
+  [CommonComponentsProps.key]?: number;
   [CommonComponentsProps.min]?: number;
   [CommonComponentsProps.max]?: number;
   [CommonComponentsProps.step]?: number;
