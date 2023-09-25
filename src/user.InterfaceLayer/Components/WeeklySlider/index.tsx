@@ -20,14 +20,32 @@ const WeeklySlider: React.FC<WeeklySliderProps> = () => {
               type={ImageEnum.enum_backGroundImage}
               background="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
             />
+            <ST.TimeBlur>
+              <Text type={TextEnum.enum_H5Text} children="19H 09m 12s" />
+            </ST.TimeBlur>
           </ST.SliderBlockImages>
-          <ST.SliderBlockTitle>
-            <Text type={TextEnum.enum_H3Text} children="Sun-Glass" />
-          </ST.SliderBlockTitle>
-          <Text type={TextEnum.enum_H6Text} children="Current bid" />
-          <Image type={ImageEnum.enum_defaultImage} />
-          <Text type={TextEnum.enum_H5Text} />
-          <Button type={ButtonEnum.enum_blackButton} children="PLACE BID" />
+
+          <ST.SubImagePad>
+            <ST.SliderBlockTitle>
+              <Text type={TextEnum.enum_H4Text} children="Sun-Glass" />
+            </ST.SliderBlockTitle>
+
+            <ST.Subtitle>
+              <ST.SubtitleBlock>
+                <Text type={TextEnum.enum_H6Text} children="Current bid" />
+
+                <ST.Rate>
+                  <Image
+                    type={ImageEnum.enum_defaultImage}
+                    src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
+                  />
+                  <Text type={TextEnum.enum_H5Text} children="1.75" />
+                </ST.Rate>
+              </ST.SubtitleBlock>
+
+              <Button type={ButtonEnum.enum_blackButton} children="PLACE BID" />
+            </ST.Subtitle>
+          </ST.SubImagePad>
         </ST.SliderBlock>
       </ST.SlidersBlock>
     </ST.Container>

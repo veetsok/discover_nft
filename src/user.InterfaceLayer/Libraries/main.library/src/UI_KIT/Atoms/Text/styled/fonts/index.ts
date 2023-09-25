@@ -22,7 +22,7 @@ const commonTextFonts = {
   [TextEnum.enum_H4Text]: {
     fontSize: "22px",
     fontStyle: "normal",
-    fontWeight: 400,
+    fontWeight: 600,
     lineHeight: "150%",
   },
   [TextEnum.enum_H5Text]: {
