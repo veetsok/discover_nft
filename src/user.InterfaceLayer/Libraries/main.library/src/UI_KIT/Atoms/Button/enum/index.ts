@@ -4,4 +4,5 @@ export enum ButtonEnum {
   "enum_categoryButton" = "categoryButton",
   "enum_leftArrowButton" = "leftarrowButton",
   "enum_rightArrowButton" = "rightarrowButton",
+  "enum_imageButton" = "imageButton",
 }

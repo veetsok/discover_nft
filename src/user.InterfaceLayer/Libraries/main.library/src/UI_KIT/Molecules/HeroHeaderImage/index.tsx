@@ -1,22 +1,39 @@
 import React from "react";
 import * as ST from "./styled";
+import ArrowButtons from "../ArrowButtons";
 import Image from "../../Atoms/Images";
-import Button from "../../Atoms/Button";
-import { ButtonEnum } from "../../Atoms/Button/enum";
+import { ImageEnum } from "../../Atoms/Images/enum";
+interface HeroHeaderSliderImageProps {}
 
-interface HeroHeaderImageProps {}
-
-const HeroHeaderImage: React.FC<HeroHeaderImageProps> = () => {
+const HeroHeaderSlider: React.FC<HeroHeaderSliderImageProps> = () => {
   return (
     <ST.Container>
-      <Image />
-      <Image />
-      <Image />
-      <Image />
+      <ST.MainBlockItem>
+        <ST.ItemImageBlock>
+          <Image
+            type={ImageEnum.enum_defaultImage}
+            src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/HeroHeaderImage1.png"
+            alt="Main Item"
+          />
+          <ST.ItemBlur />
+        </ST.ItemImageBlock>
+      </ST.MainBlockItem>
 
-      <Button type={ButtonEnum.enum_leftArrowButton} />
-      <Button type={ButtonEnum.enum_rightArrowButton} />
+      <ST.SecondBlockItem>
+        <ST.ItemImageBlock>
+          <Image
+            type={ImageEnum.enum_defaultImage}
+            src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/HeroHeaderImage1.png"
+            alt="Main Item"
+          />
+          <ST.ItemBlur />
+        </ST.ItemImageBlock>
+      </ST.SecondBlockItem>
+
+      <ST.ArrowBtn>
+        <ArrowButtons />
+      </ST.ArrowBtn>
     </ST.Container>
   );
 };
-export default HeroHeaderImage;
+export default HeroHeaderSlider;

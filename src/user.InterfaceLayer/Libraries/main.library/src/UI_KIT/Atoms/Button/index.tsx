@@ -22,19 +22,29 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
     }
     case ButtonEnum.enum_leftArrowButton: {
       return (
-        <ST.ButtonLeftArrowButton
-          isLoading={isLoading}
-          children={children}
-          {...otherProps}
-        />
+        <ST.ButtonLeftArrowButton isLoading={isLoading} {...otherProps}>
+          <ST.Image
+            src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/LeftArrow.svg"
+            alt=""
+          />
+        </ST.ButtonLeftArrowButton>
       );
     }
     case ButtonEnum.enum_rightArrowButton: {
       return (
-        <ST.ButtonRightArrowButton
-          isLoading={isLoading}
-          children={children}
-          {...otherProps}
+        <ST.ButtonRightArrowButton isLoading={isLoading} {...otherProps}>
+          <ST.Image
+            src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/RightArrow.svg"
+            alt=""
+          />
+        </ST.ButtonRightArrowButton>
+      );
+    }
+    case ButtonEnum.enum_imageButton: {
+      return (
+        <ST.Image
+          src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/RightArrow.svg"
+          alt=""
         />
       );
     }
