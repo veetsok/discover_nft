@@ -18,6 +18,8 @@ export const SecondBlockItem = styled.div`
 `;
 
 export const ItemImageBlock = styled.div`
+  width: 390px;
+  height: 394px;
   position: relative;
   & img {
     flex-shrink: 0;

@@ -12,7 +12,7 @@ const HeroHeaderSlider: React.FC<HeroHeaderSliderImageProps> = () => {
         <ST.ItemImageBlock>
           <Image
             type={ImageEnum.enum_defaultImage}
-            src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/HeroHeaderImage1.png"
+            src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
             alt="Main Item"
           />
           <ST.ItemBlur />
@@ -23,7 +23,7 @@ const HeroHeaderSlider: React.FC<HeroHeaderSliderImageProps> = () => {
         <ST.ItemImageBlock>
           <Image
             type={ImageEnum.enum_defaultImage}
-            src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/HeroHeaderImage1.png"
+            src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
             alt="Main Item"
           />
           <ST.ItemBlur />
