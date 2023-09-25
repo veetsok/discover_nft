@@ -1,4 +1,4 @@
-import WeeklySlider from "../../../Components/WeeklySlider";
+import WeeklySlider from "../../../Components/WeeklySlider.component.bll";
 import HeroHeader from "../../../Libraries/main.library/src/UI_KIT/Cells/HeroHeader";
 import Navbar from "../../../Libraries/main.library/src/UI_KIT/Cells/Navbar";
 import * as ST from "../style/style";
