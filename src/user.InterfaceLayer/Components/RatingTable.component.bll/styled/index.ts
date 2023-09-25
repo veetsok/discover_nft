@@ -9,6 +9,7 @@ export const Title = styled.div`
   margin-bottom: 90px;
 `;
 export const RatingBlock = styled.div``;
+
 export const RatingFilter = styled.div`
   display: flex;
   justify-content: space-between;
@@ -17,3 +18,8 @@ export const RatingFilter = styled.div`
     color: #93989a;
   }
 `;
+export const RatingInfo = styled.div``;
+export const RatingImage = styled.div``;
+export const RatingName = styled.div``;
+export const RatingBlockName = styled.div``;
+export const RatingSub = styled.div``;
