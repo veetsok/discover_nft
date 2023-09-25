@@ -15,6 +15,8 @@ export interface ImageType extends ExtendsCommonType {
   isLoading?: boolean;
   isError?: boolean;
   value?: string;
+  srcSet?: string;
+  background?: string;
 }
 
 export interface TestProps {

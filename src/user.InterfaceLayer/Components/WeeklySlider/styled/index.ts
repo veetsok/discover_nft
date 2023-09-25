@@ -14,9 +14,9 @@ export const SlidersBlock = styled.div`
 `;
 export const SliderBlock = styled.div`
   max-width: 280px;
-  border-radius: 23.479px;
+  border-radius: 23px;
   background: var(--others-white, #fff);
-  box-shadow: 38.81659px 11.7626px 58.81301px 0px rgba(199, 199, 199, 0.6);
+  box-shadow: 38px 11px 58px 0px rgba(199, 199, 199, 0.6);
 `;
 export const SliderBlockImages = styled.div`
   margin: 0 auto;
@@ -25,16 +25,12 @@ export const SliderBlockImages = styled.div`
   width: 252px;
   height: 252px;
   flex-shrink: 0;
-  & img {
-    width: 100%;
-    border-radius: 23.479px;
-    background: var(--greyscale-50, #f8f8f8);
-  }
-  & h3 {
-  }
-  & h6 {
-  }
-  & h5 {
-  }
 `;
 export const SliderBlockTitle = styled.div``;
+
+// & h3 {
+// }
+// & h6 {
+// }
+// & h5 {
+// }

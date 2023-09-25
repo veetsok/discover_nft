@@ -17,7 +17,13 @@ export const TextH1 = styled.h1<Text>`
   line-height: ${commonTextFonts[TextEnum.enum_H1Text].lineHeight};
 `;
 
-export const TextH2 = styled.h2<Text>``;
+export const TextH2 = styled.h2<Text>`
+  font-size: ${commonTextFonts[TextEnum.enum_H2Text].fontSize};
+  font-style: ${commonTextFonts[TextEnum.enum_H2Text].fontStyle};
+  font-weight: ${commonTextFonts[TextEnum.enum_H2Text].fontWeight};
+  line-height: ${commonTextFonts[TextEnum.enum_H2Text].lineHeight};
+.enum_H2Text
+`;
 
 export const TextH3 = styled.h3<Text>`
   font-family: ${FontsEnum.Poppins}, sans-serif;
@@ -35,7 +41,13 @@ export const TextH4 = styled.h4<Text>`
   line-height: ${commonTextFonts[TextEnum.enum_H4Text].lineHeight};
 `;
 
-export const TextH5 = styled.h5<Text>``;
+export const TextH5 = styled.h5<Text>`
+  font-family: ${FontsEnum.Poppins}, sans-serif;
+  font-size: ${commonTextFonts[TextEnum.enum_H5Text].fontSize};
+  font-style: ${commonTextFonts[TextEnum.enum_H5Text].fontStyle};
+  font-weight: ${commonTextFonts[TextEnum.enum_H5Text].fontWeight};
+  line-height: ${commonTextFonts[TextEnum.enum_H5Text].lineHeight};
+`;
 
 export const TextH6 = styled.h6<Text>`
   font-family: ${FontsEnum.Poppins}, sans-serif;

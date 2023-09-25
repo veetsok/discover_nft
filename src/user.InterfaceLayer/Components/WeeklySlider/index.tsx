@@ -17,14 +17,14 @@ const WeeklySlider: React.FC<WeeklySliderProps> = () => {
         <ST.SliderBlock>
           <ST.SliderBlockImages>
             <Image
-              type={ImageEnum.enum_defaultImage}
-              src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
+              type={ImageEnum.enum_backGroundImage}
+              background="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
             />
           </ST.SliderBlockImages>
           <ST.SliderBlockTitle>
-            <Text type={TextEnum.enum_H3Text} />
+            <Text type={TextEnum.enum_H3Text} children="Sun-Glass" />
           </ST.SliderBlockTitle>
-          <Text type={TextEnum.enum_H6Text} />
+          <Text type={TextEnum.enum_H6Text} children="Current bid" />
           <Image type={ImageEnum.enum_defaultImage} />
           <Text type={TextEnum.enum_H5Text} />
           <Button type={ButtonEnum.enum_blackButton} children="PLACE BID" />
