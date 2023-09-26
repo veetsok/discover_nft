@@ -10,9 +10,7 @@ export const Image = styled.img<Image>`
 `;
 export const ImageBackground = styled.div<Image>`
   background: ${(props) =>
-    props.background
-      ? `url(${props.background}) lightgray 50% / cover no-repeat;`
-      : "none"};
+    props.background ? `url(${props.background})  50% / cover no-repeat;` : "none"};
   width: 100%;
   height: 100%;
   border-radius: 23px;

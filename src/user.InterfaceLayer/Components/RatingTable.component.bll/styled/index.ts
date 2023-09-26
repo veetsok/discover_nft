@@ -10,15 +10,10 @@ export const Title = styled.div`
 `;
 export const RatingFilter = styled.tr`
   display: contents;
-
   & h4 {
     color: #93989a;
   }
 `;
-
-// display: flex;
-//   justify-content: space-between;
-//   align-items: center;
 
 export const Td = styled.td`
   padding: 15px;
@@ -27,15 +22,38 @@ export const Td = styled.td`
   white-space: nowrap;
 `;
 
-export const Collection = styled.div`
+export const Collection = styled.td`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 `;
 
 export const RatingImage = styled.div`
-  display: inline;
+  width: 60px;
+  height: 60px;
+  & div {
+    border-radius: 50%;
+  }
 `;
+
+export const RatingName = styled.div`
+  & h5 {
+    color: #141416;
+    font-weight: 700;
+  }
+`;
+
+export const RatingSub = styled.div`
+  color: #64748b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+`;
+
+export const RatingBlockName = styled.div``;
 
 export const Table = styled.table`
   width: auto;
@@ -55,47 +73,64 @@ export const Tbody = styled.tbody`
   display: contents;
 `;
 
-export const RatingName = styled.div``;
-
-export const RatingBlockName = styled.div``;
-
-export const RatingSub = styled.div`
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+export const Tr = styled.tbody`
+  display: contents;
 `;
 
 export const RatingBlock = styled.tr`
   display: contents;
-  border-bottom: 1px solid #ebe9e9;
-  padding: 24px 0 14px 0;
+  & td {
+    border-bottom: 1px solid #ebe9e9;
+    padding: 24px 0 14px 0;
+  }
 `;
 
 export const Volume = styled.td`
+  display: flex;
+  align-items: center;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  & div {
+    width: 22px;
+    height: 22px;
+  }
+  & h5 {
+    font-weight: 700;
+  }
 `;
 
 export const Days = styled.td`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 `;
 
 export const Price = styled.td`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 `;
 
 export const Owners = styled.td`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 `;
 
 export const Items = styled.td`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

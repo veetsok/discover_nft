@@ -99,8 +99,8 @@ const RatingTable: React.FC<RatingTableProps> = () => {
             <ST.Collection>
               <ST.RatingImage>
                 <Image
-                  type={ImageEnum.enum_defaultImage}
-                  src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
+                  type={ImageEnum.enum_backGroundImage}
+                  background="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
                 />
               </ST.RatingImage>
               <ST.RatingBlockName>
@@ -114,8 +114,8 @@ const RatingTable: React.FC<RatingTableProps> = () => {
             </ST.Collection>
             <ST.Volume>
               <Image
-                type={ImageEnum.enum_defaultImage}
-                src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
+                type={ImageEnum.enum_backGroundImage}
+                background="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
               />
               <Text type={TextEnum.enum_H5Text} children="8454" />
             </ST.Volume>
