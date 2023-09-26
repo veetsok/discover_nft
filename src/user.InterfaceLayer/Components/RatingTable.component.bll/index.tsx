@@ -85,52 +85,59 @@ const RatingTable: React.FC<RatingTableProps> = () => {
         <Text type={TextEnum.enum_H2Text} children="Top Collection" />
       </ST.Title>
 
-      <ST.RatingFilter>
-        {titleData.map((e) => (
-          <Text key={e.id} type={TextEnum.enum_H4Text} children={e.title} />
-        ))}
-      </ST.RatingFilter>
-      <ST.RatingBlock>
-        <ST.RatingInfo>
-          <ST.RatingImage>
-            <Image
-              type={ImageEnum.enum_defaultImage}
-              src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
-            />
-          </ST.RatingImage>
-          <ST.RatingBlockName>
-            <ST.RatingName>
-              <Text type={TextEnum.enum_H5Text} children="Alex Ca." />
-            </ST.RatingName>
-            <ST.RatingSub>
-              <Text type={TextEnum.enum_H6Text} children="By Alex" />
-            </ST.RatingSub>
-          </ST.RatingBlockName>
-        </ST.RatingInfo>
-        <ST.Volume>
-          <Image
-            type={ImageEnum.enum_defaultImage}
-            src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
-          />
-          <Text type={TextEnum.enum_H5Text} children="8454" />
-        </ST.Volume>
-        <ST.Days>
-          <Text type={TextEnum.enum_H5Text} children="+ 27%" />
-        </ST.Days>
-        <ST.Price>
-          <Image
-            type={ImageEnum.enum_defaultImage}
-            src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
-          />
-          <Text type={TextEnum.enum_H5Text} children="8454" />
-        </ST.Price>
-        <ST.Owners>
-          <Text type={TextEnum.enum_H5Text} children="2.2K" />
-        </ST.Owners>
-        <ST.Items>
-          <Text type={TextEnum.enum_H5Text} children="500" />
-        </ST.Items>
-      </ST.RatingBlock>
+      <ST.Table>
+        <ST.Thead>
+          <ST.RatingFilter>
+            {titleData.map((e) => (
+              <Text key={e.id} type={TextEnum.enum_H4Text} children={e.title} />
+            ))}
+          </ST.RatingFilter>
+        </ST.Thead>
+
+        <ST.Tbody>
+          <ST.RatingBlock>
+            <ST.Collection>
+              <ST.RatingImage>
+                <Image
+                  type={ImageEnum.enum_defaultImage}
+                  src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
+                />
+              </ST.RatingImage>
+              <ST.RatingBlockName>
+                <ST.RatingName>
+                  <Text type={TextEnum.enum_H5Text} children="Alex Ca." />
+                </ST.RatingName>
+                <ST.RatingSub>
+                  <Text type={TextEnum.enum_H6Text} children="By Alex" />
+                </ST.RatingSub>
+              </ST.RatingBlockName>
+            </ST.Collection>
+            <ST.Volume>
+              <Image
+                type={ImageEnum.enum_defaultImage}
+                src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
+              />
+              <Text type={TextEnum.enum_H5Text} children="8454" />
+            </ST.Volume>
+            <ST.Days>
+              <Text type={TextEnum.enum_H5Text} children="+ 27%" />
+            </ST.Days>
+            <ST.Price>
+              <Image
+                type={ImageEnum.enum_defaultImage}
+                src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
+              />
+              <Text type={TextEnum.enum_H5Text} children="8454" />
+            </ST.Price>
+            <ST.Owners>
+              <Text type={TextEnum.enum_H5Text} children="2.2K" />
+            </ST.Owners>
+            <ST.Items>
+              <Text type={TextEnum.enum_H5Text} children="500" />
+            </ST.Items>
+          </ST.RatingBlock>
+        </ST.Tbody>
+      </ST.Table>
     </ST.Container>
   );
 };
