@@ -35,7 +35,7 @@ const NavMenu: React.FC<NavMenuProps> = () => {
         />
       </ST.Logo>
       {linkData.map((e) => (
-        <Text type={TextEnum.enum_aText} key={e.id} children={e.title} />
+        <Text type={TextEnum.enum_aText} key={`NavMenu ${e.id}`} children={e.title} />
       ))}
       <br />
     </>

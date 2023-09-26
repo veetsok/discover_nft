@@ -3,9 +3,11 @@ import { ButtonType } from "./type";
 import * as ST from "./styled";
 import { ButtonEnum } from "./enum";
 import { IButtonPropsDefault } from "./mock";
+import Image from "../Images";
+import { ImageEnum } from "../Images/enum";
 
 const Button: React.FC<ButtonType> = (props: ButtonType) => {
-  const { children, type, isLoading, ...otherProps } = props;
+  const { children, type, isLoading, src, alt, ...otherProps } = props;
   if (props.isLoading) return <>Loading</>;
   if (props.isError) return <ST.Error>Ошибка</ST.Error>;
   switch (type) {
@@ -17,7 +19,10 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
     }
     case ButtonEnum.enum_categoryButton: {
       return (
-        <ST.ButtonCategory isLoading={isLoading} children={children} {...otherProps} />
+        <ST.ButtonCategory isLoading={isLoading} {...otherProps}>
+          <Image type={ImageEnum.enum_defaultImage} src={src} alt={alt} />
+          {children}
+        </ST.ButtonCategory>
       );
     }
     case ButtonEnum.enum_leftArrowButton: {

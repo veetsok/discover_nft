@@ -57,8 +57,16 @@ export const ButtonRightArrowButton = styled.button<Button>`
 `;
 
 export const ButtonCategory = styled.button<Button>`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  padding: 16px;
+  color: var(--greyscale-900, #1a202c);
+  border-radius: 13px;
+  border: 2px solid #141416;
 
-font-family:${FontsEnum.Poppins}
+  font-family:${FontsEnum.Poppins}
   font-size: ${commonButtonFonts[ButtonEnum.enum_categoryButton].fontSize};
   font-style: ${commonButtonFonts[ButtonEnum.enum_categoryButton].fontStyle};
   font-weight: ${commonButtonFonts[ButtonEnum.enum_categoryButton].fontWeight};

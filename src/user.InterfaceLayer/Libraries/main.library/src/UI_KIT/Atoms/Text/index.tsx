@@ -5,30 +5,30 @@ import { TextEnum } from "./enum";
 import { ITextPropsDefault } from "./mock";
 
 const Text: React.FC<TextType> = (props: TextType) => {
-  const { type, children, key, ...otherProps } = props;
+  const { type, children, ...otherProps } = props;
   if (props.isLoading) return <>Loading</>;
   if (props.isError) return <ST.Error>Ошибка</ST.Error>;
   switch (type) {
     case TextEnum.enum_H1Text: {
-      return <ST.TextH1 key={key} children={children} />;
+      return <ST.TextH1 children={children} />;
     }
     case TextEnum.enum_H2Text: {
-      return <ST.TextH2 key={key} children={children} />;
+      return <ST.TextH2 children={children} />;
     }
     case TextEnum.enum_H3Text: {
-      return <ST.TextH3 key={key} children={children} />;
+      return <ST.TextH3 children={children} />;
     }
     case TextEnum.enum_H4Text: {
-      return <ST.TextH4 key={key} children={children} />;
+      return <ST.TextH4 children={children} />;
     }
     case TextEnum.enum_H5Text: {
-      return <ST.TextH5 key={key} children={children} />;
+      return <ST.TextH5 children={children} />;
     }
     case TextEnum.enum_H6Text: {
-      return <ST.TextH6 key={key} children={children} />;
+      return <ST.TextH6 children={children} />;
     }
     case TextEnum.enum_aText: {
-      return <ST.aText key={key} children={children} {...otherProps} />;
+      return <ST.aText children={children} {...otherProps} />;
     }
     default: {
       return <ST.Error>Ошибка</ST.Error>;

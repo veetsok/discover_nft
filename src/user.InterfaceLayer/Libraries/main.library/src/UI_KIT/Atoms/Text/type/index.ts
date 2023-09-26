@@ -4,10 +4,7 @@ import {
 } from "../../../../constants/commonComponentProps";
 import { TextEnum } from "../enum";
 
-type ExtendsCommonType = Pick<
-  ICommonComponentProps,
-  CommonComponentsProps.title | CommonComponentsProps.key
->;
+type ExtendsCommonType = Pick<ICommonComponentProps, CommonComponentsProps.title>;
 
 export interface TextType extends ExtendsCommonType {
   type: TextEnum;

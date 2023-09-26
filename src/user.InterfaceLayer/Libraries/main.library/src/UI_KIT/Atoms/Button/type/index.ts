@@ -6,7 +6,7 @@ import { ButtonEnum } from "../enum";
 
 type ExtendsCommonType = Pick<
   ICommonComponentProps,
-  CommonComponentsProps.value | CommonComponentsProps.src
+  CommonComponentsProps.value | CommonComponentsProps.src | CommonComponentsProps.alt
 >;
 
 export interface ButtonType extends ExtendsCommonType {
