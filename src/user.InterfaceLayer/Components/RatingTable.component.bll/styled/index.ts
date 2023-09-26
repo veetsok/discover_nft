@@ -24,7 +24,6 @@ export const Td = styled.td`
 
 export const Collection = styled.td`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -34,6 +33,7 @@ export const Collection = styled.td`
 export const RatingImage = styled.div`
   width: 60px;
   height: 60px;
+  margin-right: 16px;
   & div {
     border-radius: 50%;
   }
@@ -61,8 +61,8 @@ export const Table = styled.table`
   display: grid;
   border-collapse: collapse;
   grid-template-columns:
-    minmax(150px, 1fr) minmax(150px, 1.67fr) minmax(150px, 1.67fr) minmax(150px, 1.67fr)
-    minmax(150px, 3.33fr) minmax(150px, 1.67fr);
+    minmax(296px, 1fr) minmax(180px, 1.67fr) minmax(180px, 1.67fr) minmax(180px, 1.67fr)
+    minmax(180px, 3.33fr) minmax(180px, 1.67fr);
 `;
 
 export const Thead = styled.thead`
@@ -102,25 +102,33 @@ export const Volume = styled.td`
 
 export const Days = styled.td`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  & h5 {
+    font-weight: 700;
+    color: #10c352;
+  }
 `;
 
 export const Price = styled.td`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  & div {
+    width: 22px;
+    height: 22px;
+  }
+  & h5 {
+    font-weight: 700;
+  }
 `;
 
 export const Owners = styled.td`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -129,7 +137,6 @@ export const Owners = styled.td`
 
 export const Items = styled.td`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   overflow: hidden;
   text-overflow: ellipsis;

@@ -124,8 +124,8 @@ const RatingTable: React.FC<RatingTableProps> = () => {
             </ST.Days>
             <ST.Price>
               <Image
-                type={ImageEnum.enum_defaultImage}
-                src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
+                type={ImageEnum.enum_backGroundImage}
+                background="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
               />
               <Text type={TextEnum.enum_H5Text} children="8454" />
             </ST.Price>
