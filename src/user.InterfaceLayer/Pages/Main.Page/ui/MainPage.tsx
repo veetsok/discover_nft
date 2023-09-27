@@ -9,6 +9,7 @@ import Unleash from "../../../Libraries/main.library/src/Widgets/unleash.widget"
 import * as ST from "../style/style";
 
 const MainPage: React.FC = () => {
+
   return (
     <ST.Container>
       <Navbar />

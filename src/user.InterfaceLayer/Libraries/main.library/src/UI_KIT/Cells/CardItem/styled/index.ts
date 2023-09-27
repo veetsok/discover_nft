@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-export const SlidersBlock = styled.div`
-  padding: 100px 0 115px 0;
-`;
 export const SliderBlock = styled.div`
   max-width: 280px;
   border-radius: 23px;

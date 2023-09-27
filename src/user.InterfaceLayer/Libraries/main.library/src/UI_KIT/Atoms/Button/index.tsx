@@ -9,7 +9,7 @@ import { TextEnum } from "../Text/enum";
 import Text from "../Text";
 
 const Button: React.FC<ButtonType> = (props: ButtonType) => {
-  const { children, type, isLoading, src, alt, ...otherProps } = props;
+  const { children, type, isLoading, onClick, src, alt, ...otherProps } = props;
   if (props.isLoading) return <>Loading</>;
   if (props.isError) return <ST.Error>Ошибка</ST.Error>;
   switch (type) {
@@ -49,7 +49,7 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
     }
     case ButtonEnum.enum_leftArrowButton: {
       return (
-        <ST.ButtonLeftArrowButton isLoading={isLoading} {...otherProps}>
+        <ST.ButtonLeftArrowButton onClick={onClick} isLoading={isLoading} {...otherProps}>
           <ST.Image
             src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/LeftArrow.svg"
             alt=""
@@ -59,7 +59,11 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
     }
     case ButtonEnum.enum_rightArrowButton: {
       return (
-        <ST.ButtonRightArrowButton isLoading={isLoading} {...otherProps}>
+        <ST.ButtonRightArrowButton
+          onClick={onClick}
+          isLoading={isLoading}
+          {...otherProps}
+        >
           <ST.Image
             src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/RightArrow.svg"
             alt=""
