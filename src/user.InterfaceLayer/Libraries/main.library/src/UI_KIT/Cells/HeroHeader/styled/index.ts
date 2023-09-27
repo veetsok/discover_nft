@@ -12,9 +12,10 @@ export const HeroBlock = styled.div`
 `;
 
 export const ArrowImage = styled.div`
+  z-index: -20;
   width: 128px;
   position: absolute;
-  top: 160px;
+  top: 100px;
   right: 90px;
   transform: rotate(-5deg);
   & img {
@@ -23,6 +24,7 @@ export const ArrowImage = styled.div`
 `;
 
 export const DoteImage = styled.div`
+  z-index: -20;
   width: 173px;
   height: 192px;
   position: absolute;
@@ -34,6 +36,7 @@ export const DoteImage = styled.div`
   }
 `;
 export const DoteImageSec = styled.div`
+  z-index: -20;
   width: 173px;
   height: 192px;
   position: absolute;

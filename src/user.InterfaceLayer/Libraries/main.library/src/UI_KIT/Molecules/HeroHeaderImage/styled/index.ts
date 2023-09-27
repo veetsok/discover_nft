@@ -13,10 +13,10 @@ export const SecondBlockItem = styled.div`
   height: 320px;
   flex-shrink: 0;
   position: absolute;
-  right: 25px;
-  top: 225px;
+  left: 425px;
+  top: 175px;
   border-radius: 10px;
-  border: 1px solid #000;
+  border: 2px solid #000;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   filter: blur(33.75477600097656px);
   & img {
@@ -30,7 +30,6 @@ export const SecondBlockItem = styled.div`
 export const ItemImageBlock = styled.div`
   width: 390px;
   height: 394px;
-  position: relative;
   & img {
     flex-shrink: 0;
     width: 100%;
@@ -39,18 +38,7 @@ export const ItemImageBlock = styled.div`
   }
 `;
 
-export const ItemBlur = styled.div`
-  position: absolute;
-  z-index: -10;
-  top: 24px;
-  width: 100%;
-  height: 100%;
-  border-radius: 11.957px;
-  background: url("/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/BlurImg.png"),
-    lightgray 50% / cover no-repeat;
-  filter: blur(41.85015106201172px);
-`;
-
 export const ArrowBtn = styled.div`
   margin-top: 48px;
+  margin-left: 100px;
 `;
