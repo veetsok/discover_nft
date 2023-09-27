@@ -2,7 +2,9 @@ import React from "react";
 import * as ST from "./styled";
 import HeroText from "../../Molecules/HeroText";
 import Features from "../../Molecules/Features";
-import HeroHeaderImage from "../../Molecules/HeroHeaderImage";
+import HeroHeaderSlider from "../../Molecules/HeroHeaderImage";
+import Image from "../../Atoms/Images";
+import { ImageEnum } from "../../Atoms/Images/enum";
 
 interface HeroHeaderProps {}
 
@@ -14,8 +16,27 @@ const HeroHeader: React.FC<HeroHeaderProps> = () => {
         <Features />
       </ST.HeroBlock>
       <ST.HeroImageBLock>
-        <HeroHeaderImage />
+        <HeroHeaderSlider />
       </ST.HeroImageBLock>
+      <ST.ArrowImage>
+        <Image
+          type={ImageEnum.enum_defaultImage}
+          src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/HeroHeaderImageArrow.svg"
+        />
+      </ST.ArrowImage>
+
+      <ST.DoteImage>
+        <Image
+          type={ImageEnum.enum_defaultImage}
+          src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/DotOrnament.svg"
+        />
+      </ST.DoteImage>
+      <ST.DoteImageSec>
+        <Image
+          type={ImageEnum.enum_defaultImage}
+          src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/DotOrnament.svg"
+        />
+      </ST.DoteImageSec>
     </ST.HeroHeader>
   );
 };
