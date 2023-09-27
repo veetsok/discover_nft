@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const SliderBlock = styled.div`
   max-width: 280px;
+  padding: 0 20px;
   border-radius: 23px;
   background: var(--others-white, #fff);
   box-shadow: 38px 11px 58px 0px rgba(199, 199, 199, 0.6);

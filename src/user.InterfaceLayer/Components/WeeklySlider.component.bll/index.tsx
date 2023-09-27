@@ -24,7 +24,7 @@ const WeeklySlider: React.FC<WeeklySliderProps> = () => {
     <ST.Container>
       <Text type={TextEnum.enum_H2Text} children="Weekly - Top NFT" />
       <ST.SlidersBlock>
-        {cardItems.map((e) => (
+        {[...cardItems, ...cardItems, ...cardItems].map((e) => (
           <ST.SliderWrapper style={{ transform: `translateX(${-currentIndex * 100}%)` }}>
             <CardItem
               key={`SlidersBlock${e.id}`}
