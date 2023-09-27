@@ -16,6 +16,13 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
     case ButtonEnum.enum_blackButton: {
       return <ST.ButtonBlack isLoading={isLoading} children={children} />;
     }
+    case ButtonEnum.enum_svgImage: {
+      return (
+        <ST.svgButton isLoading={isLoading}>
+          <div dangerouslySetInnerHTML={{ __html: children as string }} />
+        </ST.svgButton>
+      );
+    }
     case ButtonEnum.enum_whiteButton: {
       return <ST.ButtonWhite isLoading={isLoading} children={children} />;
     }

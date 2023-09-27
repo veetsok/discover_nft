@@ -4,6 +4,7 @@ import HeroHeader from "../../../Libraries/main.library/src/UI_KIT/Cells/HeroHea
 import Navbar from "../../../Libraries/main.library/src/UI_KIT/Cells/Navbar";
 import Banner from "../../../Libraries/main.library/src/Widgets/banner";
 import Marketplace from "../../../Libraries/main.library/src/Widgets/exploreMarketplace.widget";
+import Footer from "../../../Libraries/main.library/src/Widgets/footer";
 import Unleash from "../../../Libraries/main.library/src/Widgets/unleash.widget";
 import * as ST from "../style/style";
 
@@ -17,6 +18,7 @@ const MainPage: React.FC = () => {
       <Marketplace />
       <Unleash />
       <Banner />
+      <Footer />
     </ST.Container>
   );
 };

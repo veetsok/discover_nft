@@ -9,6 +9,8 @@ interface Button {
   isLoading?: boolean;
 }
 
+export const svgButton = styled.button<Button>``;
+
 export const Explore = styled.button<Button>`
   display: inline-flex;
   justify-content: center;

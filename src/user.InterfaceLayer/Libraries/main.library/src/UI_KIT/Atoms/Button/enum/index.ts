@@ -6,4 +6,5 @@ export enum ButtonEnum {
   "enum_rightArrowButton" = "rightarrowButton",
   "enum_imageButton" = "imageButton",
   "enum_Explore" = "Explore",
+  "enum_svgImage" = "svgImage",
 }
