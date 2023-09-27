@@ -24,6 +24,10 @@ export const Container = styled.div`
     border: 2px solid ${Colors.WHITE};
     margin-right: 30px;
     margin-bottom: 20px;
+    &:hover {
+      color: ${Colors.PRIMARY_BLACK};
+      background: ${Colors.WHITE};
+    }
   }
 `;
 
