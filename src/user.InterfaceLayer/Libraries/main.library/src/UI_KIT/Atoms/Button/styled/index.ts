@@ -9,6 +9,25 @@ interface Button {
   isLoading?: boolean;
 }
 
+export const Explore = styled.button<Button>`
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: ${Colors.TRANSPARENT};
+  font-family: ${FontsEnum.Poppins};
+  font-size: ${commonButtonFonts[ButtonEnum.enum_blackButton].fontSize};
+  font-style: ${commonButtonFonts[ButtonEnum.enum_blackButton].fontStyle};
+  font-weight: ${commonButtonFonts[ButtonEnum.enum_blackButton].fontWeight};
+  line-height: ${commonButtonFonts[ButtonEnum.enum_blackButton].lineHeight};
+  & h5 {
+    color: #acadb9;
+  }
+  & img {
+    margin-left: 11px;
+    width: 10px;
+    height: 10px;
+  }
+`;
 export const ButtonBlack = styled.button<Button>`
   ${commonButtonStyles}
   background: ${Colors.PRIMARY_BLACK};

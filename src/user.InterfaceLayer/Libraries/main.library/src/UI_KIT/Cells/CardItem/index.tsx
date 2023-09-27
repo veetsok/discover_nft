@@ -7,36 +7,40 @@ import { ImageEnum } from "../../Atoms/Images/enum";
 import { TextEnum } from "../../Atoms/Text/enum";
 import Image from "../../Atoms/Images";
 import Text from "../../Atoms/Text";
-interface CardItemProps {}
 
-const CardItem: React.FC<CardItemProps> = () => {
+export interface CardItemProps {
+  url?: string;
+  time?: string;
+  title?: string;
+  subTitle?: string;
+  rate?: string;
+}
+
+const CardItem: React.FC<CardItemProps> = ({ url, time, title, subTitle, rate }) => {
   return (
     <ST.SliderBlock>
       <ST.SliderBlockImages>
-        <Image
-          type={ImageEnum.enum_backGroundImage}
-          background="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
-        />
+        <Image type={ImageEnum.enum_backGroundImage} background={url} />
         <ST.TimeBlur>
-          <Text type={TextEnum.enum_H5Text} children="19H 09m 12s" />
+          <Text type={TextEnum.enum_H5Text} children={time} />
         </ST.TimeBlur>
       </ST.SliderBlockImages>
 
       <ST.SubImagePad>
         <ST.SliderBlockTitle>
-          <Text type={TextEnum.enum_H4Text} children="Sun-Glass" />
+          <Text type={TextEnum.enum_H4Text} children={title} />
         </ST.SliderBlockTitle>
 
         <ST.Subtitle>
           <ST.SubtitleBlock>
-            <Text type={TextEnum.enum_H6Text} children="Current bid" />
+            <Text type={TextEnum.enum_H6Text} children={subTitle} />
 
             <ST.Rate>
               <Image
                 type={ImageEnum.enum_defaultImage}
                 src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
               />
-              <Text type={TextEnum.enum_H5Text} children="1.75" />
+              <Text type={TextEnum.enum_H5Text} children={rate} />
             </ST.Rate>
           </ST.SubtitleBlock>
 

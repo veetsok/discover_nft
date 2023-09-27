@@ -5,6 +5,8 @@ import { ButtonEnum } from "./enum";
 import { IButtonPropsDefault } from "./mock";
 import Image from "../Images";
 import { ImageEnum } from "../Images/enum";
+import { TextEnum } from "../Text/enum";
+import Text from "../Text";
 
 const Button: React.FC<ButtonType> = (props: ButtonType) => {
   const { children, type, isLoading, src, alt, ...otherProps } = props;
@@ -23,6 +25,18 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
           <Image type={ImageEnum.enum_defaultImage} src={src} alt={alt} />
           {children}
         </ST.ButtonCategory>
+      );
+    }
+    case ButtonEnum.enum_Explore: {
+      return (
+        <ST.Explore isLoading={isLoading} {...otherProps}>
+          <Text type={TextEnum.enum_H5Text} children={children} />
+          <Image
+            type={ImageEnum.enum_defaultImage}
+            src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/exploreArrow.svg"
+            alt={alt}
+          />
+        </ST.Explore>
       );
     }
     case ButtonEnum.enum_leftArrowButton: {

@@ -11,7 +11,7 @@ export const SliderBlock = styled.div`
 `;
 export const SliderBlockImages = styled.div`
   margin: 0 auto;
-  padding: 14px 0 18px 0;
+  padding: 14px 14px 18px 14px;
   text-align: center;
   width: 252px;
   height: 252px;

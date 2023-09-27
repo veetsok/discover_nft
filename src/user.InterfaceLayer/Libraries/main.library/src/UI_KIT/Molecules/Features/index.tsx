@@ -6,7 +6,7 @@ import * as ST from "./styled";
 interface FeaturesProps {}
 
 const Features: React.FC<FeaturesProps> = () => {
-  const array = [
+  const FeaturesData = [
     { id: 1, title: "430K+", subTitle: "Art Works" },
     { id: 2, title: "159K+", subTitle: "Creators" },
     { id: 3, title: "87K+", subTitle: "Collections" },
@@ -14,17 +14,17 @@ const Features: React.FC<FeaturesProps> = () => {
 
   return (
     <ST.Features>
-      {array.map((e) => (
+      {FeaturesData.map((e) => (
         <>
           <ST.SubTitle>
             <Text
               type={TextEnum.enum_H3Text}
-              key={`Features title ${e.id}`}
+              key={`featuresTitle${e.id}`}
               children={e.title}
             />
             <Text
               type={TextEnum.enum_H6Text}
-              key={`Features Subtitle ${e.id}`}
+              key={`featuresSubtitle${e.id}`}
               children={e.subTitle}
             />
           </ST.SubTitle>

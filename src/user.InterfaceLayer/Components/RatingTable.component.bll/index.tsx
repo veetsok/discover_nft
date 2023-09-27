@@ -27,28 +27,32 @@ const RatingTable: React.FC<RatingTableProps> = () => {
         <ST.Thead>
           <ST.RatingFilter>
             {titleData.map((e) => (
-              <Text
-                key={`RatingFilter${e.id}`}
-                type={TextEnum.enum_H4Text}
-                children={e.title}
-              />
+              <>
+                <Text
+                  key={`RatingFilter-${e.id}`}
+                  type={TextEnum.enum_H4Text}
+                  children={e.title}
+                />
+              </>
             ))}
           </ST.RatingFilter>
         </ST.Thead>
-        {collectionData.map((e) => (
-          <RatingBlock
-            key={`RatingBlock ${e.id}`}
-            name={e.name}
-            subName={e.subName}
-            volume={e.volume}
-            day={e.day}
-            price={e.price}
-            owners={e.owners}
-            items={e.items}
-            image={e.image}
-          />
-        ))}
-        <ST.Tbody></ST.Tbody>
+
+        <ST.Tr>
+          {collectionData.map((e) => (
+            <RatingBlock
+              key={`RatingBlock-${e.id}`}
+              name={e.name}
+              subName={e.subName}
+              volume={e.volume}
+              day={e.day}
+              price={e.price}
+              owners={e.owners}
+              items={e.items}
+              image={e.image}
+            />
+          ))}
+        </ST.Tr>
       </ST.Table>
     </ST.Container>
   );
