@@ -15,6 +15,16 @@ export const SecondBlockItem = styled.div`
   position: absolute;
   right: 25px;
   top: 225px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  filter: blur(33.75477600097656px);
+  & img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
 `;
 
 export const ItemImageBlock = styled.div`

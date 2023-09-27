@@ -20,14 +20,12 @@ const HeroHeaderSlider: React.FC<HeroHeaderSliderImageProps> = () => {
       </ST.MainBlockItem>
 
       <ST.SecondBlockItem>
-        <ST.ItemImageBlock>
-          <Image
-            type={ImageEnum.enum_defaultImage}
-            src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
-            alt="Main Item"
-          />
-          <ST.ItemBlur />
-        </ST.ItemImageBlock>
+        <Image
+          type={ImageEnum.enum_defaultImage}
+          src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
+          alt="Main Item"
+        />
+        <ST.ItemBlur />
       </ST.SecondBlockItem>
 
       <ST.ArrowBtn>
