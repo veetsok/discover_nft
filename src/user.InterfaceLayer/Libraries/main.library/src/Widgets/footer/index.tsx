@@ -44,13 +44,15 @@ const Footer: React.FC<FooterProps> = () => {
       </ST.Block>
       <ST.SubBlock>
         <Text type={TextEnum.enum_H6Text} children="© 2023 EATLY All Rights Reserved." />
-        {socialData.map((e) => (
-          <Button
-            type={ButtonEnum.enum_svgImage}
-            children={e.url}
-            key={`socialDataFooter${e.id}`}
-          />
-        ))}
+        <ST.FooterLink>
+          {socialData.map((e) => (
+            <Button
+              type={ButtonEnum.enum_svgImage}
+              children={e.url}
+              key={`socialDataFooter${e.id}`}
+            />
+          ))}
+        </ST.FooterLink>
       </ST.SubBlock>
     </ST.Container>
   );

@@ -18,9 +18,10 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
     }
     case ButtonEnum.enum_svgImage: {
       return (
-        <ST.svgButton isLoading={isLoading}>
-          <div dangerouslySetInnerHTML={{ __html: children as string }} />
-        </ST.svgButton>
+        <ST.svgButton
+          isLoading={isLoading}
+          dangerouslySetInnerHTML={{ __html: children as string }}
+        />
       );
     }
     case ButtonEnum.enum_whiteButton: {
