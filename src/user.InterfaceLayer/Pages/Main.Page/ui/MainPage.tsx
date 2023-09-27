@@ -2,7 +2,9 @@ import RatingTable from "../../../Components/RatingTable.component.bll";
 import WeeklySlider from "../../../Components/WeeklySlider.component.bll";
 import HeroHeader from "../../../Libraries/main.library/src/UI_KIT/Cells/HeroHeader";
 import Navbar from "../../../Libraries/main.library/src/UI_KIT/Cells/Navbar";
+import Banner from "../../../Libraries/main.library/src/Widgets/banner";
 import Marketplace from "../../../Libraries/main.library/src/Widgets/exploreMarketplace.widget";
+import Unleash from "../../../Libraries/main.library/src/Widgets/unleash.widget";
 import * as ST from "../style/style";
 
 const MainPage: React.FC = () => {
@@ -13,6 +15,8 @@ const MainPage: React.FC = () => {
       <WeeklySlider />
       <RatingTable />
       <Marketplace />
+      <Unleash />
+      <Banner />
     </ST.Container>
   );
 };
