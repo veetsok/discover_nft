@@ -24,6 +24,7 @@ export const SlidersBlock = styled.div`
 `;
 
 export const SliderWrapper = styled.div`
+  padding: 0 15px;
   display: flex;
   transition: transform 0.3s ease-in-out;
 `;

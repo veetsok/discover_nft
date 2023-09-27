@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const SliderBlock = styled.div`
   max-width: 280px;
-  padding: 0 20px;
   border-radius: 23px;
   background: var(--others-white, #fff);
   box-shadow: 38px 11px 58px 0px rgba(199, 199, 199, 0.6);
@@ -20,7 +19,7 @@ export const SliderBlockImages = styled.div`
 export const TimeBlur = styled.div`
   position: absolute;
   top: 32px;
-  right: 11px;
+  right: 22px;
   display: inline-block;
   padding: 8px 14px;
   color: var(--others-white, #fff);
