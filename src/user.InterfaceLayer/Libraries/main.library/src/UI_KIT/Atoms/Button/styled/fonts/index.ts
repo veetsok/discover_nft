@@ -5,28 +5,24 @@ const commonButtonFonts = {
     fontSize: "16px",
     fontStyle: "normal",
     fontWeight: 600,
-    lineHeight: "130%",
     textTransform: "uppercase",
   },
   [ButtonEnum.enum_whiteButton]: {
     fontSize: "16px",
     fontStyle: "normal",
     fontWeight: 600,
-    lineHeight: "130%",
     textTransform: "uppercase",
   },
   [ButtonEnum.enum_categoryButton]: {
     fontSize: "16px",
     fontStyle: "normal",
     fontWeight: 600,
-    lineHeight: "130%",
     textTransform: "auto",
   },
-  [ButtonEnum.enum_arrowButton]: {
+  [ButtonEnum.enum_Explore]: {
     fontSize: "16px",
     fontStyle: "normal",
     fontWeight: 400,
-    lineHeight: "100%",
   },
 };
 

@@ -20,7 +20,6 @@ export const Explore = styled.button<Button>`
   font-size: ${commonButtonFonts[ButtonEnum.enum_blackButton].fontSize};
   font-style: ${commonButtonFonts[ButtonEnum.enum_blackButton].fontStyle};
   font-weight: ${commonButtonFonts[ButtonEnum.enum_blackButton].fontWeight};
-  line-height: ${commonButtonFonts[ButtonEnum.enum_blackButton].lineHeight};
   & h5 {
     color: #acadb9;
   }
@@ -38,20 +37,18 @@ export const ButtonBlack = styled.button<Button>`
   font-size: ${commonButtonFonts[ButtonEnum.enum_blackButton].fontSize};
   font-style: ${commonButtonFonts[ButtonEnum.enum_blackButton].fontStyle};
   font-weight: ${commonButtonFonts[ButtonEnum.enum_blackButton].fontWeight};
-  line-height: ${commonButtonFonts[ButtonEnum.enum_blackButton].lineHeight};
   text-transform: ${commonButtonFonts[ButtonEnum.enum_blackButton].textTransform};
 `;
 
 export const ButtonWhite = styled.button<Button>`
-${commonButtonStyles}
+  ${commonButtonStyles}
   border: 2px solid ${Colors.BLACK};
   background: ${Colors.TRANSPARENT};
   color: ${Colors.BLACK};
-  font-family:${FontsEnum.Poppins}
+  font-family: ${FontsEnum.Poppins};
   font-size: ${commonButtonFonts[ButtonEnum.enum_whiteButton].fontSize};
   font-style: ${commonButtonFonts[ButtonEnum.enum_whiteButton].fontStyle};
   font-weight: ${commonButtonFonts[ButtonEnum.enum_whiteButton].fontWeight};
-  line-height: ${commonButtonFonts[ButtonEnum.enum_whiteButton].lineHeight};
   text-transform: ${commonButtonFonts[ButtonEnum.enum_whiteButton].textTransform};
 `;
 
