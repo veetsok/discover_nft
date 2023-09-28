@@ -22,6 +22,9 @@ const HeroHeaderSlider: React.FC<HeroHeaderSliderImageProps> = () => {
     );
   };
 
+  const getNextSlideIndex = (currentIndex: number) =>
+    (currentIndex + 1) % cardItems.length;
+
   return (
     <ST.Container>
       <ST.MainBlockItem>
@@ -35,9 +38,9 @@ const HeroHeaderSlider: React.FC<HeroHeaderSliderImageProps> = () => {
       </ST.MainBlockItem>
       <ST.SecondBlockItem>
         <Image
-          type={ImageEnum.enum_defaultImage}
-          src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
-          alt="Blur"
+          type={ImageEnum.enum_backGroundImage}
+          background={cardItems[getNextSlideIndex(currentIndex)].url}
+          alt="Next Slide"
         />
       </ST.SecondBlockItem>
       <ST.ArrowBtn>
