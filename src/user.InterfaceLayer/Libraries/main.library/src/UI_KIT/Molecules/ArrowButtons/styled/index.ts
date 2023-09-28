@@ -7,6 +7,18 @@ export const VerticalBtns = styled.div`
   border-radius: 17px;
   background: var(--neutrals-8, #fcfcfd);
   box-shadow: 0px 43px 34px -25px rgba(15, 15, 15, 0.12);
+
+  & button {
+    svg {
+      fill: #929292;
+      transition: all 0.8s;
+    }
+    &:hover {
+      svg {
+        fill: #23262f;
+      }
+    }
+  }
 `;
 
 export const LeftButton = styled.div`

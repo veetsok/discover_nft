@@ -11,16 +11,24 @@ import * as ST from "../style/style";
 const MainPage: React.FC = () => {
 
   return (
-    <ST.Container>
-      <Navbar />
-      <HeroHeader />
-      <WeeklySlider />
-      <RatingTable />
-      <Marketplace />
-      <Unleash />
-      <Banner />
-      <Footer />
-    </ST.Container>
+    <>
+      <ST.Container>
+        <Navbar />
+        <HeroHeader />
+      </ST.Container>
+      <ST.Backgroud>
+        <ST.Container>
+          <WeeklySlider />
+        </ST.Container>
+      </ST.Backgroud>
+      <ST.Container>
+        <RatingTable />
+        <Marketplace />
+        <Unleash />
+        <Banner />
+        <Footer />
+      </ST.Container>
+    </>
   );
 };
 

@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
   width: 100vw;
   min-height: 100vh;
+  background:#F9F9F9;
 }
 input {
   padding: 0;
