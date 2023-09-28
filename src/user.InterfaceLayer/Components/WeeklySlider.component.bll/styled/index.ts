@@ -11,11 +11,9 @@ padding: 70px 0 90px 0
 
 export const Slider = styled.div`
   text-align: center;
-  & button {
-    box-shadow: 0px 43px 34px -26px rgba(15, 15, 15, 0.12);
-  }
 `;
 export const SlidersBlock = styled.div`
+  min-width: 1440px;
   overflow: hidden;
   padding: 100px 0 115px 0;
   display: flex;
@@ -24,7 +22,7 @@ export const SlidersBlock = styled.div`
 `;
 
 export const SliderWrapper = styled.div`
-  padding: 0 15px;
+  padding: 0 20px;
   display: flex;
   transition: transform 0.3s ease-in-out;
 `;

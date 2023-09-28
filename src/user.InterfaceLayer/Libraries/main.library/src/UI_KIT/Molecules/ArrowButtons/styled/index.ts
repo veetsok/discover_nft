@@ -8,6 +8,22 @@ export const VerticalBtns = styled.div`
   background: var(--neutrals-8, #fcfcfd);
   box-shadow: 0px 43px 34px -25px rgba(15, 15, 15, 0.12);
 `;
+
+export const LeftButton = styled.div`
+  & button {
+    padding: 22px 35px 22px 22px;
+    border-radius: 18px 0 0 18px;
+    background: var(--neutrals-8, #fcfcfd);
+  }
+`;
+export const RightButton = styled.div`
+  & button {
+    padding: 22px 22px 22px 35px;
+    border-radius: 0 18px 18px 0;
+    background: var(--neutrals-8, #fcfcfd);
+  }
+`;
+
 export const Vertical = styled.div`
   content: "";
   width: 2px;

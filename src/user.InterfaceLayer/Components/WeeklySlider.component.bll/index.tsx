@@ -4,8 +4,7 @@ import Text from "../../Libraries/main.library/src/UI_KIT/Atoms/Text";
 import { TextEnum } from "../../Libraries/main.library/src/UI_KIT/Atoms/Text/enum";
 import CardItem from "../../Libraries/main.library/src/UI_KIT/Cells/CardItem";
 import { cardItems } from "../../Libraries/main.library/src/Widgets/exploreMarketplace.widget/const";
-import Button from "../../Libraries/main.library/src/UI_KIT/Atoms/Button";
-import { ButtonEnum } from "../../Libraries/main.library/src/UI_KIT/Atoms/Button/enum";
+import ArrowButtons from "../../Libraries/main.library/src/UI_KIT/Molecules/ArrowButtons";
 
 interface WeeklySliderProps {}
 
@@ -38,8 +37,7 @@ const WeeklySlider: React.FC<WeeklySliderProps> = () => {
         ))}
       </ST.SlidersBlock>
       <ST.Slider>
-        <Button type={ButtonEnum.enum_leftArrowButton} onClick={prevSlide} />
-        <Button type={ButtonEnum.enum_rightArrowButton} onClick={nextSlide} />
+        <ArrowButtons onPrev={prevSlide} onNext={nextSlide} />
       </ST.Slider>
     </ST.Container>
   );
