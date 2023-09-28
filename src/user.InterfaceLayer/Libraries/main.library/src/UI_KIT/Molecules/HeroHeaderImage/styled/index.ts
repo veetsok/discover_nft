@@ -39,6 +39,6 @@ export const ItemImageBlock = styled.div`
 `;
 
 export const ArrowBtn = styled.div`
-  margin-top: 48px;
-  margin-left: 100px;
+  margin-top: 28px;
+  text-align: center;
 `;

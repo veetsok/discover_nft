@@ -3,25 +3,24 @@ import * as ST from "./styled";
 import ArrowButtons from "../ArrowButtons";
 import Image from "../../Atoms/Images";
 import { ImageEnum } from "../../Atoms/Images/enum";
+import { cardItems } from "../../../Widgets/exploreMarketplace.widget/const";
 interface HeroHeaderSliderImageProps {}
 
 const HeroHeaderSlider: React.FC<HeroHeaderSliderImageProps> = () => {
   return (
     <ST.Container>
       <ST.MainBlockItem>
-        <ST.ItemImageBlock>
-          <Image
-            type={ImageEnum.enum_defaultImage}
-            src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
-            alt="Main Item"
-          />
-        </ST.ItemImageBlock>
+        {cardItems.map((e) => (
+          <ST.ItemImageBlock>
+            <Image type={ImageEnum.enum_defaultImage} src={e.url} alt="Main Item" />
+          </ST.ItemImageBlock>
+        ))}
       </ST.MainBlockItem>
       <ST.SecondBlockItem>
         <Image
           type={ImageEnum.enum_defaultImage}
           src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
-          alt="Main Item"
+          alt="Blur"
         />
       </ST.SecondBlockItem>
       <ST.ArrowBtn>
