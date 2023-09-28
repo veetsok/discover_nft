@@ -13,7 +13,8 @@ export const Slider = styled.div`
   text-align: center;
 `;
 export const SlidersBlock = styled.div`
-  min-width: 1440px;
+  width: 1440px;
+  margin: 0 auto;
   overflow: hidden;
   padding: 100px 0 115px 0;
   display: flex;

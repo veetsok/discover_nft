@@ -17,9 +17,7 @@ const MainPage: React.FC = () => {
         <HeroHeader />
       </ST.Container>
       <ST.Backgroud>
-        <ST.Container>
-          <WeeklySlider />
-        </ST.Container>
+        <WeeklySlider />
       </ST.Backgroud>
       <ST.Container>
         <RatingTable />
