@@ -49,29 +49,20 @@ export const ButtonWhite = styled.button<Button>`
   font-size: ${commonButtonFonts[ButtonEnum.enum_whiteButton].fontSize};
   font-style: ${commonButtonFonts[ButtonEnum.enum_whiteButton].fontStyle};
   font-weight: ${commonButtonFonts[ButtonEnum.enum_whiteButton].fontWeight};
-  text-transform: ${commonButtonFonts[ButtonEnum.enum_whiteButton].textTransform};
 `;
 
-export const Image = styled.img<Button>``;
-
-export const ButtonLeftArrowButton = styled.button<Button>`
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 22px 35px 22px 22px;
-  border-radius: 18px 0 0 18px;
-  background: var(--neutrals-8, #fcfcfd);
-  box-shadow: 0px 43px 35px -26px rgba(15, 15, 15, 0.12);
+export const Image = styled.img<Button>`
+  width: 100%;
 `;
 
-export const ButtonRightArrowButton = styled.button<Button>`
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 22px 22px 22px 35px;
-  border-radius: 0 18px 18px 0;
-  background: var(--neutrals-8, #fcfcfd);
-  box-shadow: 0px 43px 35px -26px rgba(15, 15, 15, 0.12);
+export const ButtonFollow = styled.button<Button>`
+  padding: 7px 14px;
+  border-radius: 7px;
+  border: 2px solid var(--neutrals-6, #e6e8ec);
+  font-family: ${FontsEnum.Poppins};
+  font-size: ${commonButtonFonts[ButtonEnum.enum_followButton].fontSize};
+  font-style: ${commonButtonFonts[ButtonEnum.enum_followButton].fontStyle};
+  font-weight: ${commonButtonFonts[ButtonEnum.enum_followButton].fontWeight};
 `;
 
 export const ButtonCategory = styled.button<Button>`

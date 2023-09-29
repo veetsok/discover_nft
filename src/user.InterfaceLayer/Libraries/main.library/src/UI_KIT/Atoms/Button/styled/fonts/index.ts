@@ -1,6 +1,11 @@
 import { ButtonEnum } from "../../enum";
 
 const commonButtonFonts = {
+  [ButtonEnum.enum_followButton]: {
+    fontSize: "12px",
+    fontStyle: "normal",
+    fontWeight: 700,
+  },
   [ButtonEnum.enum_blackButton]: {
     fontSize: "16px",
     fontStyle: "normal",

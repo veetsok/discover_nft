@@ -7,6 +7,7 @@ import { ImageEnum } from "../../UI_KIT/Atoms/Images/enum";
 import { UnleashSubTitleData } from "./const";
 import Button from "../../UI_KIT/Atoms/Button";
 import { ButtonEnum } from "../../UI_KIT/Atoms/Button/enum";
+import BestSaller from "../bestSallers.widget";
 
 interface UnleashProps {}
 
@@ -34,6 +35,7 @@ const Unleash: React.FC<UnleashProps> = () => {
       </ST.TextBlock>
 
       <Button type={ButtonEnum.enum_blackButton} />
+      <BestSaller />
     </ST.Container>
   );
 };

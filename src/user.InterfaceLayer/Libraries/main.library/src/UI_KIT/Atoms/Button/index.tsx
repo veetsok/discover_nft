@@ -28,6 +28,9 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
     case ButtonEnum.enum_whiteButton: {
       return <ST.ButtonWhite isLoading={isLoading} children={children} />;
     }
+    case ButtonEnum.enum_followButton: {
+      return <ST.ButtonFollow isLoading={isLoading} children={children} />;
+    }
     case ButtonEnum.enum_categoryButton: {
       return (
         <ST.ButtonCategory isLoading={isLoading} {...otherProps}>
@@ -48,30 +51,7 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
         </ST.Explore>
       );
     }
-    case ButtonEnum.enum_leftArrowButton: {
-      return (
-        <ST.ButtonLeftArrowButton onClick={onClick} isLoading={isLoading} {...otherProps}>
-          <ST.Image
-            src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/LeftArrow.svg"
-            alt=""
-          />
-        </ST.ButtonLeftArrowButton>
-      );
-    }
-    case ButtonEnum.enum_rightArrowButton: {
-      return (
-        <ST.ButtonRightArrowButton
-          onClick={onClick}
-          isLoading={isLoading}
-          {...otherProps}
-        >
-          <ST.Image
-            src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/RightArrow.svg"
-            alt=""
-          />
-        </ST.ButtonRightArrowButton>
-      );
-    }
+
     case ButtonEnum.enum_imageButton: {
       return (
         <ST.Image
