@@ -11,6 +11,9 @@ export const Container = styled.div`
   }
 `;
 
+export const Button = styled.div`
+  margin-top: 70px;
+`;
 export const RecentPosition = styled.div`
   position: absolute;
   bottom: 180px;

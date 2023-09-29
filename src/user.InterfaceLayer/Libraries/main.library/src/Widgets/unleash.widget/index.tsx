@@ -35,7 +35,9 @@ const Unleash: React.FC<UnleashProps> = () => {
               />
             </ST.TextItem>
           ))}
-          <Button type={ButtonEnum.enum_blackButton} />
+          <ST.Button>
+            <Button type={ButtonEnum.enum_ExploreBlack} children="Explore More" />
+          </ST.Button>
         </ST.TextBlock>
         <ST.RecentPosition>
           <RecentViewed />

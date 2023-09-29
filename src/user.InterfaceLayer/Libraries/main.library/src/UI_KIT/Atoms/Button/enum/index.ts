@@ -5,5 +5,6 @@ export enum ButtonEnum {
   "enum_categoryButton" = "categoryButton",
   "enum_imageButton" = "imageButton",
   "enum_Explore" = "Explore",
+  "enum_ExploreBlack" = "ExploreBlack",
   "enum_svgImage" = "svgImage",
 }

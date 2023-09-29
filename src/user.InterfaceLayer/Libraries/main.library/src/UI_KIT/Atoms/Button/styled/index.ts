@@ -29,6 +29,20 @@ export const Explore = styled.button<Button>`
     height: 10px;
   }
 `;
+
+export const ExploreBlack = styled.button<Button>`
+  ${commonButtonStyles}
+  background: ${Colors.PRIMARY_BLACK};
+  color: ${Colors.WHITE};
+  font-family: ${FontsEnum.Poppins};
+  font-size: ${commonButtonFonts[ButtonEnum.enum_blackButton].fontSize};
+  font-style: ${commonButtonFonts[ButtonEnum.enum_blackButton].fontStyle};
+  font-weight: ${commonButtonFonts[ButtonEnum.enum_blackButton].fontWeight};
+  text-transform: ${commonButtonFonts[ButtonEnum.enum_blackButton].textTransform};
+  & svg {
+    margin-left: 10px;
+  }
+`;
 export const ButtonBlack = styled.button<Button>`
   ${commonButtonStyles}
   background: ${Colors.PRIMARY_BLACK};
