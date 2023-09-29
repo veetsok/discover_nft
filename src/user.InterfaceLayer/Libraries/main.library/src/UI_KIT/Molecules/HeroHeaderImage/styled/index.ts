@@ -18,12 +18,22 @@ export const SecondBlockItem = styled.div`
   border-radius: 10px;
   border: 2px solid #000;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  filter: blur(33.75477600097656px);
+  filter: blur(33px);
   & img {
     flex-shrink: 0;
     width: 100%;
     height: 100%;
     border-radius: 25px;
+  }
+  @media (max-width: 1140px) {
+    width: 226px;
+    height: 229px;
+    left: 240px;
+    top: 190px;
+  }
+  @media (max-width: 768px) {
+    left: 125px;
+    top: 125px;
   }
 `;
 
@@ -35,6 +45,11 @@ export const ItemImageBlock = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 25px;
+  }
+
+  @media (max-width: 1140px) {
+    width: 279px;
+    height: 280px;
   }
 `;
 

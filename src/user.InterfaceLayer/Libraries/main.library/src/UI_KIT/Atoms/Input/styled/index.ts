@@ -9,6 +9,12 @@ export const Search = styled.div`
     position: relative;
     left: 30px;
   }
+  @media (max-width: 1140px) {
+    & svg {
+      left: 18px;
+      width: 11px;
+    }
+  }
 `;
 
 export const InputStyle = styled.input`
@@ -31,25 +37,12 @@ export const InputStyle = styled.input`
   &:focus,
   &:hover {
   }
-
-  @media (max-width: 768px) {
-    border-radius: 8px;
-    font-size: 12px;
-    height: 30px;
-    padding: 12px;
-    &:active,
-    &:focus,
-    &:hover {
+  @media (max-width: 1140px) {
+    font-size: 11px;
+    padding: 12px 13px 12px 20px;
+    &::placeholder {
+      font-size: 11px;
     }
-  }
-  &::-webkit-calendar-picker-indicator {
-    display: none;
-  }
-
-  @media (max-width: 426px) {
-    font-size: 10px;
-    height: 20px;
-    padding: 8px;
   }
 `;
 

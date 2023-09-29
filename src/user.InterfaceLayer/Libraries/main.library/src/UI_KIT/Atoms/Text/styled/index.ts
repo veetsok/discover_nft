@@ -15,6 +15,9 @@ export const TextH1 = styled.h1<Text>`
   font-style: ${commonTextFonts[TextEnum.enum_H1Text].fontStyle};
   font-weight: ${commonTextFonts[TextEnum.enum_H1Text].fontWeight};
   line-height: ${commonTextFonts[TextEnum.enum_H1Text].lineHeight};
+  @media (max-width: 1140px) {
+    font-size: 53px;
+  }
 `;
 
 export const TextH2 = styled.h2<Text>`
@@ -22,7 +25,9 @@ export const TextH2 = styled.h2<Text>`
   font-style: ${commonTextFonts[TextEnum.enum_H2Text].fontStyle};
   font-weight: ${commonTextFonts[TextEnum.enum_H2Text].fontWeight};
   line-height: ${commonTextFonts[TextEnum.enum_H2Text].lineHeight};
-.enum_H2Text
+  @media (max-width: 1140px) {
+    font-size: 32px;
+  }
 `;
 
 export const TextH3 = styled.h3<Text>`
@@ -31,6 +36,9 @@ export const TextH3 = styled.h3<Text>`
   font-style: ${commonTextFonts[TextEnum.enum_H3Text].fontStyle};
   font-weight: ${commonTextFonts[TextEnum.enum_H3Text].fontWeight};
   line-height: ${commonTextFonts[TextEnum.enum_H3Text].lineHeight};
+  @media (max-width: 1140px) {
+    font-size: 26px;
+  }
 `;
 
 export const TextH4 = styled.h4<Text>`
@@ -76,6 +84,10 @@ export const aText = styled.a<Text>`
   font-weight: ${commonTextFonts[TextEnum.enum_aText].fontWeight};
   line-height: ${commonTextFonts[TextEnum.enum_aText].lineHeight};
   text-transform: ${commonTextFonts[TextEnum.enum_aText].textTransform};
+  @media (max-width: 1140px) {
+    font-size: 12px;
+    margin: 0 18px;
+  }
 `;
 
 export const Error = styled.h6<Text>``;
