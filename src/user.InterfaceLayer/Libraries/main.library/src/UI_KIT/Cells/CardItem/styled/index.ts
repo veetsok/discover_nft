@@ -5,15 +5,37 @@ export const SliderBlock = styled.div`
   border-radius: 23px;
   background: var(--others-white, #fff);
   box-shadow: 38px 11px 58px 0px rgba(199, 199, 199, 0.6);
+  @media (max-width: 1140px) {
+    max-width: 200px;
+  }
 `;
 export const SliderBlockImages = styled.div`
   margin: 0 auto;
   padding: 14px 14px 18px 14px;
   text-align: center;
-  width: 252px;
+  width: 228px;
   height: 252px;
   flex-shrink: 0;
   position: relative;
+
+  @media (max-width: 1140px) {
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+    & h4 {
+      font-size: 15px;
+    }
+    & h5 {
+      font-size: 11px;
+    }
+    & h6 {
+      font-size: 10px;
+    }
+    button {
+      font-size: 10px;
+      padding: 6px 13px;
+    }
+  }
 `;
 
 export const TimeBlur = styled.div`
@@ -57,5 +79,10 @@ export const Rate = styled.div`
   margin-top: 5px;
   & img {
     width: 21px;
+    @media (max-width: 1140px) {
+      & img {
+        width: 15px;
+      }
+    }
   }
 `;

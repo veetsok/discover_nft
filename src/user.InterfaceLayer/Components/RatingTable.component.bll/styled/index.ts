@@ -72,6 +72,11 @@ export const Table = styled.table`
   grid-template-columns:
     minmax(400px, 1fr) minmax(168px, 1fr) minmax(168px, 1fr) minmax(168px, 1fr)
     minmax(168px, 1fr) minmax(168px, 1fr);
+  @media (max-width: 1240px) {
+    grid-template-columns:
+      minmax(300px, 1fr) minmax(168px, 1fr) minmax(168px, 1fr) minmax(168px, 1fr)
+      minmax(168px, 1fr) minmax(168px, 1fr);
+  }
 `;
 
 export const Thead = styled.thead`

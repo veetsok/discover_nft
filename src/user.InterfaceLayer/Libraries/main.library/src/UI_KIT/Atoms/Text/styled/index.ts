@@ -39,6 +39,9 @@ export const TextH4 = styled.h4<Text>`
   font-style: ${commonTextFonts[TextEnum.enum_H4Text].fontStyle};
   font-weight: ${commonTextFonts[TextEnum.enum_H4Text].fontWeight};
   line-height: ${commonTextFonts[TextEnum.enum_H4Text].lineHeight};
+  @media (max-width: 1140px) {
+    font-size: 15px;
+  }
 `;
 
 export const TextH5 = styled.h5<Text>`
@@ -47,9 +50,15 @@ export const TextH5 = styled.h5<Text>`
   font-style: ${commonTextFonts[TextEnum.enum_H5Text].fontStyle};
   font-weight: ${commonTextFonts[TextEnum.enum_H5Text].fontWeight};
   line-height: ${commonTextFonts[TextEnum.enum_H5Text].lineHeight};
+  @media (max-width: 1140px) {
+    font-size: 11px;
+  }
 `;
 
 export const TextH6 = styled.h6<Text>`
+  @media (max-width: 1140px) {
+    font-size: 10px;
+  }
   font-family: ${FontsEnum.Poppins}, sans-serif;
   font-size: ${commonTextFonts[TextEnum.enum_H6Text].fontSize};
   font-style: ${commonTextFonts[TextEnum.enum_H6Text].fontStyle};

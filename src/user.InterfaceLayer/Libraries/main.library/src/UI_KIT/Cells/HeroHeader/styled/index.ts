@@ -5,6 +5,9 @@ export const HeroHeader = styled.div`
   padding: 75px 0 143px 0;
   align-items: center;
   position: relative;
+  @media (max-width: 1546px) {
+    overflow: hidden;
+  }
 `;
 
 export const HeroBlock = styled.div`

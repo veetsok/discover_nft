@@ -52,6 +52,10 @@ export const ButtonBlack = styled.button<Button>`
   font-style: ${commonButtonFonts[ButtonEnum.enum_blackButton].fontStyle};
   font-weight: ${commonButtonFonts[ButtonEnum.enum_blackButton].fontWeight};
   text-transform: ${commonButtonFonts[ButtonEnum.enum_blackButton].textTransform};
+  @media (max-width: 1140px) {
+    font-size: 10px;
+    padding: 6px 13px;
+  }
 `;
 
 export const ButtonWhite = styled.button<Button>`
