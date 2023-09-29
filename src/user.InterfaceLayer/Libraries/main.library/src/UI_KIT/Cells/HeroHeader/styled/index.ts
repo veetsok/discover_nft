@@ -24,23 +24,32 @@ export const ArrowImage = styled.div`
   width: 128px;
   position: absolute;
   top: 100px;
-  right: 90px;
+  right: 6px;
   transform: rotate(-5deg);
   & img {
     width: 100%;
+  }
+  @media (max-width: 890px) {
+    width: 108px;
+    top: 100px;
+    right: 70px;
   }
 `;
 
 export const DoteImage = styled.div`
   z-index: -20;
-  width: 173px;
-  height: 192px;
+  width: 103px;
+  height: 92px;
   position: absolute;
   top: 100px;
   right: -150px;
   & img {
     width: 100%;
     height: 100%;
+  }
+  @media (max-width: 890px) {
+    top: 50px;
+    right: -100px;
   }
 `;
 export const DoteImageSec = styled.div`
@@ -54,12 +63,17 @@ export const DoteImageSec = styled.div`
     width: 100%;
     height: 100%;
   }
+  @media (max-width: 890px) {
+    top: 150px;
+    right: -100px;
+  }
 `;
 
 export const HeroImageBLock = styled.div`
   max-width: 780px;
   @media (max-width: 890px) {
     max-width: 448px;
+    margin-left: 34px;
   }
 `;
 

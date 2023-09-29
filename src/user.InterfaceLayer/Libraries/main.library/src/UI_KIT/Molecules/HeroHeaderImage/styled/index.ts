@@ -32,8 +32,8 @@ export const SecondBlockItem = styled.div`
     top: 190px;
   }
   @media (max-width: 768px) {
-    left: 125px;
-    top: 125px;
+    right: 240px;
+    top: 170px;
   }
 `;
 
