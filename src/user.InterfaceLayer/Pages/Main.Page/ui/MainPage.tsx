@@ -24,8 +24,12 @@ const MainPage: React.FC = () => {
         <Marketplace />
         <Unleash />
         <Banner />
-        <Footer />
       </ST.Container>
+      <ST.Black>
+        <ST.Container>
+          <Footer />
+        </ST.Container>
+      </ST.Black>
     </>
   );
 };
