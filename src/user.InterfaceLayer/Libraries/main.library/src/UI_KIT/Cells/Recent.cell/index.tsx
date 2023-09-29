@@ -4,8 +4,6 @@ import { ImageEnum } from "../../Atoms/Images/enum";
 import { TextEnum } from "../../Atoms/Text/enum";
 import Image from "../../Atoms/Images";
 import Text from "../../Atoms/Text";
-import Button from "../../Atoms/Button";
-import { ButtonEnum } from "../../Atoms/Button/enum";
 
 interface RecentProps {
   name?: string;
@@ -21,7 +19,7 @@ interface RecentProps {
   follow?: boolean;
 }
 
-const Recent: React.FC<RecentProps> = ({ image, name, subName, follow, count }) => {
+const Recent: React.FC<RecentProps> = ({ image, name, subName, volume, count }) => {
   return (
     <ST.ListItem>
       <ST.ListItemName>
@@ -36,13 +34,13 @@ const Recent: React.FC<RecentProps> = ({ image, name, subName, follow, count }) 
           <Text type={TextEnum.enum_H6Text} children={subName} />
         </ST.ListItemBlock>
       </ST.ListItemName>
-      {follow ? (
-        <Button type={ButtonEnum.enum_followButton} children="Follow" />
-      ) : (
-        <ST.False>
-          <Button type={ButtonEnum.enum_followButton} children="Unfollow" />
-        </ST.False>
-      )}
+      <ST.Volume>
+        <Image
+          type={ImageEnum.enum_backGroundImage}
+          background="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
+        />
+        <Text type={TextEnum.enum_H5Text} children={volume} />
+      </ST.Volume>
     </ST.ListItem>
   );
 };

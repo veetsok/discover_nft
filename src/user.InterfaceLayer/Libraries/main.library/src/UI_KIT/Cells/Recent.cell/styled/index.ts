@@ -14,6 +14,23 @@ export const ListItem = styled.div`
   }
 `;
 
+export const Volume = styled.div`
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  & div {
+    width: 15px;
+    height: 15px;
+  }
+  & h5 {
+    font-weight: 700;
+  }
+`;
+
+
+
 export const ListItemName = styled.div`
   display: flex;
   align-items: center;
