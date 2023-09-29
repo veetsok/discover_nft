@@ -12,15 +12,15 @@ const NavInput: React.FC<NavInputProps> = () => {
 
   return (
     <>
-      <ST.Input>
-        <Input
-          type={InputTypeEnum.TEXT}
-          value={value}
-          placeholder="Search Art Work / Creator"
-          onChange={(val: string) => setValue(val)}
-        />
-      </ST.Input>
-      <Button type={ButtonEnum.enum_blackButton} children="Connect Wallet" />
+      <Input
+        type={InputTypeEnum.TEXT}
+        value={value}
+        placeholder="Search Art Work / Creator"
+        onChange={(val: string) => setValue(val)}
+      />
+      <ST.Button>
+        <Button type={ButtonEnum.enum_blackButton} children="Connect Wallet" />
+      </ST.Button>
     </>
   );
 };

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
-export const Input = styled.div`
-  margin: 0 30px 0 90px;
+export const Search = styled.div``;
+export const Button = styled.div`
+  margin-left: 30px;
 `;
+
