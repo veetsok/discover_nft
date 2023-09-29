@@ -15,6 +15,9 @@ export const Logo = styled.div`
   }
   & h4 {
     font-size: 29px;
+    @media (max-width: 890px) {
+      font-size: 20px;
+    }
   }
 `;
 

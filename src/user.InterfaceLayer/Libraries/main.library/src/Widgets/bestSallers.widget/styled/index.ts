@@ -8,6 +8,10 @@ export const Container = styled.div`
   padding: 21px 26px;
   width: 268px;
   margin-right: 180px;
+  @media (max-width: 890px) {
+    padding: 18px 15px;
+    width: 200px;
+  }
 `;
 
 export const Navbar = styled.div`

@@ -29,6 +29,10 @@ export const Container = styled.div`
       background: ${Colors.WHITE};
     }
   }
+
+  @media (max-width: 1100px) {
+    padding: 22px 22px 22px 47px;
+  }
 `;
 
 export const Block = styled.div``;
@@ -38,5 +42,8 @@ export const BlockImage = styled.div`
   flex-shrink: 0;
   & div {
     border-radius: 15px;
+  }
+  @media (max-width: 1100px) {
+    width: 260px;
   }
 `;

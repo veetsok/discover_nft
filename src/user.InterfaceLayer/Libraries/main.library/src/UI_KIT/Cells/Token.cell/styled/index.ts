@@ -17,6 +17,10 @@ export const Container = styled.div`
   h2 {
     color: #c5c5c5;
   }
+  @media (max-width: 890px) {
+    padding: 8px;
+    width: 230px;
+  }
 `;
 
 export const TokenBlockSImageS = styled.div`

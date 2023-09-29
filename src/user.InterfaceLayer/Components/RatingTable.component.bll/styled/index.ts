@@ -79,8 +79,8 @@ export const Table = styled.table`
   }
   @media (max-width: 890px) {
     grid-template-columns:
-      minmax(250px, 1fr) minmax(127px, 1fr) minmax(127px, 1fr) minmax(127px, 1fr)
-      minmax(127px, 1fr) minmax(127px, 1fr);
+      minmax(150px, 1fr) minmax(70px, 1fr) minmax(70px, 1fr) minmax(70px, 1fr)
+      minmax(70px, 1fr) minmax(70px, 1fr);
   }
 `;
 
