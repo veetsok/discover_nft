@@ -7,7 +7,7 @@ import Text from "../../Atoms/Text";
 import Button from "../../Atoms/Button";
 import { ButtonEnum } from "../../Atoms/Button/enum";
 
-interface BestSellItemsProps {
+interface RecentProps {
   name?: string;
   mail?: string;
   subName?: string;
@@ -21,13 +21,7 @@ interface BestSellItemsProps {
   follow?: boolean;
 }
 
-const BestSellItems: React.FC<BestSellItemsProps> = ({
-  image,
-  name,
-  mail,
-  follow,
-  count,
-}) => {
+const Recent: React.FC<RecentProps> = ({ image, name, subName, follow, count }) => {
   return (
     <ST.ListItem>
       <ST.ListItemName>
@@ -39,7 +33,7 @@ const BestSellItems: React.FC<BestSellItemsProps> = ({
         </ST.ListItemImage>
         <ST.ListItemBlock>
           <Text type={TextEnum.enum_H5Text} children={name} />
-          <Text type={TextEnum.enum_H6Text} children={mail} />
+          <Text type={TextEnum.enum_H6Text} children={subName} />
         </ST.ListItemBlock>
       </ST.ListItemName>
       {follow ? (
@@ -52,4 +46,4 @@ const BestSellItems: React.FC<BestSellItemsProps> = ({
     </ST.ListItem>
   );
 };
-export default BestSellItems;
+export default Recent;

@@ -8,6 +8,7 @@ import { UnleashSubTitleData } from "./const";
 import Button from "../../UI_KIT/Atoms/Button";
 import { ButtonEnum } from "../../UI_KIT/Atoms/Button/enum";
 import BestSaller from "../bestSallers.widget";
+import RecentViewed from "../RecentViewed.widget";
 
 interface UnleashProps {}
 
@@ -35,8 +36,8 @@ const Unleash: React.FC<UnleashProps> = () => {
           ))}
           <Button type={ButtonEnum.enum_blackButton} />
         </ST.TextBlock>
+        <RecentViewed />
       </ST.Flex>
-
       <BestSaller />
     </ST.Container>
   );

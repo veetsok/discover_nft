@@ -25,6 +25,9 @@ export const ListItemImage = styled.div`
   height: 48px;
   border-radius: 42px;
   margin-right: 13px;
+  & h5 {
+    font-size: 18px;
+  }
 `;
 
 export const Notifications = styled.div`

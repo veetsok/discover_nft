@@ -1,17 +1,19 @@
 import styled from "styled-components";
 
-export const Flex = styled.div`
-  margin-right: 280px;
-`;
-
 export const Container = styled.div`
+  position: relative;
+  max-width: 1064px;
   display: flex;
   align-items: center;
-  padding: 116px 0 180px 0;
+  justify-content: space-between;
+  padding: 116px 0 245px 0;
   h2 {
     color: #c5c5c5;
   }
 `;
+
+export const Flex = styled.div``;
+
 export const Span = styled.div`
   h2 {
     color: #18181b;

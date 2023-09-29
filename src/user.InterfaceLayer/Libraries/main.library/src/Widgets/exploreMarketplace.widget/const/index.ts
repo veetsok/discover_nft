@@ -63,12 +63,4 @@ export const cardItems = [
     rate: "4.10", // Updated rating
     url: "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass4.png",
   },
-  {
-    id: 9,
-    time: "03h 05m 45s", // Updated timer
-    title: "Dazzling Waves",
-    subTitle: "Current bid",
-    rate: "3.50", // Updated rating
-    url: "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass4.png",
-  },
 ];
