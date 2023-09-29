@@ -9,6 +9,7 @@ import Button from "../../UI_KIT/Atoms/Button";
 import { ButtonEnum } from "../../UI_KIT/Atoms/Button/enum";
 import BestSaller from "../bestSallers.widget";
 import RecentViewed from "../RecentViewed.widget";
+import Token from "../../UI_KIT/Cells/Token.cell";
 
 interface UnleashProps {}
 
@@ -39,6 +40,7 @@ const Unleash: React.FC<UnleashProps> = () => {
         <RecentViewed />
       </ST.Flex>
       <BestSaller />
+      <Token />
     </ST.Container>
   );
 };
