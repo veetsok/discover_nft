@@ -48,8 +48,8 @@ export const ListItemImage = styled.div`
 `;
 
 export const Notifications = styled.div`
-  top: 0;
-  right: 0;
+  bottom: 0;
+  right: -5px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -58,8 +58,11 @@ export const Notifications = styled.div`
   height: 20px;
   flex-shrink: 0;
   border-radius: 50px;
-  background: ${Colors.PRIMARY_BLACK};
-  color: ${Colors.WHITE};
+  background: ${Colors.WHITE};
+  color: ${Colors.PRIMARY_BLACK};
+  & h6 {
+    font-weight: 900;
+  }
 `;
 
 export const ListItemBlock = styled.div`
