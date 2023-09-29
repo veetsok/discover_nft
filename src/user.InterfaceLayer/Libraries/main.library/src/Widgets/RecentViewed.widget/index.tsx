@@ -28,6 +28,8 @@ const RecentViewed: React.FC<RecentViewedProps> = () => {
             day={e.day}
             image={e.image}
             count={e.count}
+            procent={e.procent}
+            minus={e.minus}
           />
         ))}
       </ST.ListBlock>

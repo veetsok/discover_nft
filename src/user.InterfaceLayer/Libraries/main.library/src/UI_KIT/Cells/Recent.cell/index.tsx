@@ -16,10 +16,20 @@ interface RecentProps {
   items?: string;
   image?: string;
   count?: string;
+  procent?: string;
   follow?: boolean;
+  minus?: boolean;
 }
 
-const Recent: React.FC<RecentProps> = ({ image, name, subName, volume, count }) => {
+const Recent: React.FC<RecentProps> = ({
+  image,
+  name,
+  subName,
+  volume,
+  count,
+  procent,
+  minus,
+}) => {
   return (
     <ST.ListItem>
       <ST.ListItemName>
@@ -34,13 +44,24 @@ const Recent: React.FC<RecentProps> = ({ image, name, subName, volume, count }) 
           <Text type={TextEnum.enum_H6Text} children={subName} />
         </ST.ListItemBlock>
       </ST.ListItemName>
-      <ST.Volume>
-        <Image
-          type={ImageEnum.enum_backGroundImage}
-          background="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
-        />
-        <Text type={TextEnum.enum_H5Text} children={volume} />
-      </ST.Volume>
+      <ST.Block>
+        <ST.Volume>
+          <Image
+            type={ImageEnum.enum_backGroundImage}
+            background="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
+          />
+          <Text type={TextEnum.enum_H5Text} children={volume} />
+        </ST.Volume>
+        {minus ? (
+          <ST.Procent>
+            <Text type={TextEnum.enum_H5Text} children={procent} />
+          </ST.Procent>
+        ) : (
+          <ST.ProcentRed>
+            <Text type={TextEnum.enum_H5Text} children={procent} />
+          </ST.ProcentRed>
+        )}
+      </ST.Block>
     </ST.ListItem>
   );
 };

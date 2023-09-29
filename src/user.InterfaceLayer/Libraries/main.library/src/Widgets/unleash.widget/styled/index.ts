@@ -11,6 +11,12 @@ export const Container = styled.div`
   }
 `;
 
+export const RecentPosition = styled.div`
+  position: absolute;
+  bottom: 180px;
+  right: 360px;
+  z-index: 10;
+`;
 export const Flex = styled.div``;
 
 export const Span = styled.div`

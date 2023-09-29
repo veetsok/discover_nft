@@ -14,6 +14,18 @@ export const ListItem = styled.div`
   }
 `;
 
+export const Block = styled.div``;
+export const Procent = styled.div`
+  & h5 {
+    color: #10c352;
+  }
+`;
+export const ProcentRed = styled.div`
+  & h5 {
+    color: #e23333;
+  }
+`;
+
 export const Volume = styled.div`
   display: flex;
   align-items: center;

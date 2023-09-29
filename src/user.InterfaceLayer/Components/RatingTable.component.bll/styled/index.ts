@@ -1,7 +1,15 @@
 import styled from "styled-components";
 
+export const RecentPosition = styled.div`
+  position: absolute;
+  top: -123px;
+  right: 0;
+  z-index: 10;
+`;
+
 export const Container = styled.div`
   padding: 235px 0 100px 0;
+  position: relative;
 `;
 
 export const Title = styled.div`

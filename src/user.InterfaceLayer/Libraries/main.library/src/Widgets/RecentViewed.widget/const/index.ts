@@ -21,6 +21,6 @@ export const RecentData = [
       "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass2.png",
     minus: false,
     count: "2",
-    procent: "+23,00%",
+    procent: "-32,01%",
   },
 ];

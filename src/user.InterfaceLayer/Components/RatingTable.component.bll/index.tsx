@@ -4,6 +4,7 @@ import Text from "../../Libraries/main.library/src/UI_KIT/Atoms/Text";
 import { TextEnum } from "../../Libraries/main.library/src/UI_KIT/Atoms/Text/enum";
 import RatingBlock from "../../Libraries/main.library/src/UI_KIT/Cells/RatingBlock.cell";
 import { collectionData } from "./const";
+import RecentViewed from "../../Libraries/main.library/src/Widgets/RecentViewed.widget";
 
 interface RatingTableProps {}
 
@@ -54,6 +55,9 @@ const RatingTable: React.FC<RatingTableProps> = () => {
           ))}
         </ST.Tr>
       </ST.Table>
+      <ST.RecentPosition>
+        <RecentViewed />
+      </ST.RecentPosition>
     </ST.Container>
   );
 };
