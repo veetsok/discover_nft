@@ -49,7 +49,10 @@ export const SubBlock = styled.div`
     width: 21px;
   }
   & svg {
-    fill: #fff;
+    fill: #707070;
+    &:hover {
+      fill: #fff;
+    }
   }
 `;
 
