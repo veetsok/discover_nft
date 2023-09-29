@@ -58,6 +58,7 @@ export const Image = styled.img<Button>`
 export const ButtonFollow = styled.button<Button>`
   padding: 7px 14px;
   border-radius: 7px;
+  cursor: pointer;
   border: 2px solid var(--neutrals-6, #e6e8ec);
   font-family: ${FontsEnum.Poppins};
   font-size: ${commonButtonFonts[ButtonEnum.enum_followButton].fontSize};
