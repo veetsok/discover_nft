@@ -69,8 +69,8 @@ export const Table = styled.table`
   display: grid;
   border-collapse: collapse;
   grid-template-columns:
-    minmax(296px, 1fr) minmax(180px, 1.67fr) minmax(180px, 1.67fr) minmax(180px, 1.67fr)
-    minmax(180px, 3.33fr) minmax(180px, 1.67fr);
+    minmax(400px, 2fr) minmax(168px, 1fr) minmax(168px, 1fr) minmax(168px, 1fr)
+    minmax(168px, 1fr) minmax(168px, 1fr);
 `;
 
 export const Thead = styled.thead`
