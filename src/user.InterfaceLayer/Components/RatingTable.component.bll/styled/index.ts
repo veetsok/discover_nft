@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const RecentPosition = styled.div`
   position: absolute;
   top: -123px;
-  right: 0;
+  right: 20px;
   z-index: 10;
 `;
 
@@ -64,12 +64,13 @@ export const RatingSub = styled.div`
 export const RatingBlockName = styled.div``;
 
 export const Table = styled.table`
-  width: auto;
+  overflow: hidden;
+  width: 100%;
   flex: 1;
   display: grid;
   border-collapse: collapse;
   grid-template-columns:
-    minmax(400px, 2fr) minmax(168px, 1fr) minmax(168px, 1fr) minmax(168px, 1fr)
+    minmax(400px, 1fr) minmax(168px, 1fr) minmax(168px, 1fr) minmax(168px, 1fr)
     minmax(168px, 1fr) minmax(168px, 1fr);
 `;
 
