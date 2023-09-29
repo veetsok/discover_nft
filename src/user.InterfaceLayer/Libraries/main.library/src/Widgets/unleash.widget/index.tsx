@@ -14,27 +14,29 @@ interface UnleashProps {}
 const Unleash: React.FC<UnleashProps> = () => {
   return (
     <ST.Container>
-      <Text type={TextEnum.enum_H2Text} children="Just Unleash - " />
-      <ST.Span>
-        <Text type={TextEnum.enum_H2Text} children="Your Inner Collector" />
-      </ST.Span>
-      <ST.TextBlock>
-        {UnleashSubTitleData.map((e) => (
-          <ST.TextItem>
-            <Image
-              type={ImageEnum.enum_defaultImage}
-              src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/Unleash.svg"
-            />
-            <Text
-              type={TextEnum.enum_H5Text}
-              key={`UnleashSubTitleDataUnleash${e.id}`}
-              children={e.title}
-            />
-          </ST.TextItem>
-        ))}
-      </ST.TextBlock>
+      <ST.Flex>
+        <Text type={TextEnum.enum_H2Text} children="Just Unleash - " />
+        <ST.Span>
+          <Text type={TextEnum.enum_H2Text} children="Your Inner Collector" />
+        </ST.Span>
+        <ST.TextBlock>
+          {UnleashSubTitleData.map((e) => (
+            <ST.TextItem>
+              <Image
+                type={ImageEnum.enum_defaultImage}
+                src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/Unleash.svg"
+              />
+              <Text
+                type={TextEnum.enum_H5Text}
+                key={`UnleashSubTitleDataUnleash${e.id}`}
+                children={e.title}
+              />
+            </ST.TextItem>
+          ))}
+          <Button type={ButtonEnum.enum_blackButton} />
+        </ST.TextBlock>
+      </ST.Flex>
 
-      <Button type={ButtonEnum.enum_blackButton} />
       <BestSaller />
     </ST.Container>
   );

@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
+export const Flex = styled.div`
+  margin-right: 280px;
+`;
+
 export const Container = styled.div`
+  display: flex;
+  align-items: center;
   padding: 116px 0 180px 0;
   h2 {
     color: #c5c5c5;

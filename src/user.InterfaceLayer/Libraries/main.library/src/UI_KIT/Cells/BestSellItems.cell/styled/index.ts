@@ -42,7 +42,9 @@ export const Notifications = styled.div`
   color: ${Colors.WHITE};
 `;
 
-export const ListItemBlock = styled.div``;
+export const ListItemBlock = styled.div`
+  overflow: hidden;
+`;
 export const False = styled.div`
   border-radius: 7px;
   border: 1.741px solid var(--neutrals-6, #e6e8ec);
