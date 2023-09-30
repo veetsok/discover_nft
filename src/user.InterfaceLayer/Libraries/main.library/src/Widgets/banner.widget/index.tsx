@@ -22,7 +22,7 @@ const Banner: React.FC<BannerProps> = () => {
       <ST.BlockImage>
         <Image
           type={ImageEnum.enum_backGroundImage}
-          background="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
+          background="assets/icons/SunGlass1.png"
         />
       </ST.BlockImage>
     </ST.Container>

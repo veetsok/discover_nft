@@ -24,10 +24,7 @@ const Unleash: React.FC<UnleashProps> = () => {
         <ST.TextBlock>
           {UnleashSubTitleData.map((e) => (
             <ST.TextItem>
-              <Image
-                type={ImageEnum.enum_defaultImage}
-                src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/Unleash.svg"
-              />
+              <Image type={ImageEnum.enum_defaultImage} src="assets/icons/Unleash.svg" />
               <Text
                 type={TextEnum.enum_H5Text}
                 key={`UnleashSubTitleDataUnleash${e.id}`}

@@ -38,7 +38,7 @@ const CardItem: React.FC<CardItemProps> = ({ url, time, title, subTitle, rate })
             <ST.Rate>
               <Image
                 type={ImageEnum.enum_defaultImage}
-                src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
+                src="assets/icons/mdi_ethereum.svg"
               />
               <Text type={TextEnum.enum_H5Text} children={rate} />
             </ST.Rate>

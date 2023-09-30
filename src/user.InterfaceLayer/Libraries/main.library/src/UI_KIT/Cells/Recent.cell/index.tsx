@@ -48,7 +48,7 @@ const Recent: React.FC<RecentProps> = ({
         <ST.Volume>
           <Image
             type={ImageEnum.enum_backGroundImage}
-            background="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/mdi_ethereum.svg"
+            background="assets/icons/mdi_ethereum.svg"
           />
           <Text type={TextEnum.enum_H5Text} children={volume} />
         </ST.Volume>
