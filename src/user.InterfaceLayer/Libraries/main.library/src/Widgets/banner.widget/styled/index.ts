@@ -46,4 +46,10 @@ export const BlockImage = styled.div`
   @media (max-width: 1100px) {
     width: 260px;
   }
+  @media (max-width: 425px) {
+    & div {
+      width: 130px;
+      height: 130px;
+    }
+  }
 `;
