@@ -9,8 +9,7 @@ export const collectionData = [
     price: "3,5",
     owners: "2.2K",
     items: "500",
-    image:
-      "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png",
+    image: "assets/icons/SunGlass1.png",
     follow: true,
     count: "1",
   },
@@ -24,8 +23,7 @@ export const collectionData = [
     price: "2.8",
     owners: "1.8K",
     items: "450",
-    image:
-      "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass2.png",
+    image: "assets/icons/SunGlass2.png",
     follow: true,
     count: "2",
   },
@@ -39,8 +37,7 @@ export const collectionData = [
     price: "3.2",
     owners: "1.5K",
     items: "400",
-    image:
-      "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass3.png",
+    image: "assets/icons/SunGlass3.png",
     follow: true,
     count: "2",
   },
@@ -54,8 +51,7 @@ export const collectionData = [
     price: "4.1",
     owners: "2.5K",
     items: "550",
-    image:
-      "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass4.png",
+    image: "assets/icons/SunGlass4.png",
     follow: false,
     count: "3",
   },
@@ -69,8 +65,7 @@ export const collectionData = [
     price: "2.9",
     owners: "1.7K",
     items: "480",
-    image:
-      "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png",
+    image: "assets/icons/SunGlass1.png",
     follow: true,
     count: "2",
   },
@@ -84,13 +79,11 @@ export const collectionData = [
     price: "3.6",
     owners: "2.0K",
     items: "520",
-    image:
-      "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass2.png",
+    image: "assets/icons/SunGlass2.png",
     follow: false,
     count: "3",
   },
 ];
-
 
 export const RecentData = [
   {
@@ -99,8 +92,7 @@ export const RecentData = [
     subName: "Alex.",
     volume: "8,456",
     day: "+23,00%",
-    image:
-      "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png",
+    image: "assets/icons/SunGlass1.png",
     minus: true,
     count: "1",
     procent: "+23,00%",
@@ -111,8 +103,7 @@ export const RecentData = [
     subName: "JuliyaS",
     volume: "5,327",
     day: "-32,01%",
-    image:
-      "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass2.png",
+    image: "assets/icons/SunGlass2.png",
     minus: false,
     count: "1",
     procent: "+23,00%",
