@@ -29,10 +29,7 @@ const NavMenu: React.FC<NavMenuProps> = () => {
   return (
     <>
       <ST.Logo>
-        <Image
-          type={ImageEnum.enum_defaultImage}
-          src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/Logo.svg"
-        />
+        <Image type={ImageEnum.enum_defaultImage} src="assets/icons/Logo.svg" />
       </ST.Logo>
       {linkData.map((e) => (
         <Text type={TextEnum.enum_aText} key={`NavMenu ${e.id}`} children={e.title} />
