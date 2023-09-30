@@ -5,7 +5,7 @@ export const cardItems = [
     title: "Sun-Glass",
     subTitle: "Current bid",
     rate: "1.75",
-    url: "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png",
+    url: "assets/icons/SunGlass1.png",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const cardItems = [
     title: "Shimmering Horizon",
     subTitle: "Current bid",
     rate: "4.20", // Updated rating
-    url: "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass2.png",
+    url: "assets/icons/SunGlass2.png",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const cardItems = [
     title: "Luminous Beach",
     subTitle: "Current bid",
     rate: "2.80", // Updated rating
-    url: "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass3.png",
+    url: "assets/icons/SunGlass3.png",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const cardItems = [
     title: "Dazzling Waves",
     subTitle: "Current bid",
     rate: "3.50", // Updated rating
-    url: "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass4.png",
+    url: "assets/icons/SunGlass4.png",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const cardItems = [
     title: "Radiant Seascape",
     subTitle: "Current bid",
     rate: "4.15", // Updated rating
-    url: "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png",
+    url: "assets/icons/SunGlass1.png",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const cardItems = [
     title: "Golden Sandbanks",
     subTitle: "Current bid",
     rate: "3.75", // Updated rating
-    url: "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass2.png",
+    url: "assets/icons/SunGlass2.png",
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ export const cardItems = [
     title: "Sunset Paradise",
     subTitle: "Current bid",
     rate: "2.90", // Updated rating
-    url: "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass3.png",
+    url: "assets/icons/SunGlass3.png",
   },
   {
     id: 8,
@@ -61,6 +61,6 @@ export const cardItems = [
     title: "Serenity Shores",
     subTitle: "Current bid",
     rate: "4.10", // Updated rating
-    url: "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass4.png",
+    url: "assets/icons/SunGlass4.png",
   },
 ];
