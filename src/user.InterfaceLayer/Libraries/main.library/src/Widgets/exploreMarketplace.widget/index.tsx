@@ -15,17 +15,17 @@ const Marketplace: React.FC<MarketplaceProps> = () => {
     {
       id: 2,
       text: "Category",
-      icon: "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/category/Collection.svg",
+      icon: "assets/icons/category/Collection.svg",
     },
     {
       id: 3,
       text: "Collection",
-      icon: "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/category/Dollar.svg",
+      icon: "assets/icons/category/Dollar.svg",
     },
     {
       id: 4,
       text: "Price",
-      icon: "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/category/List.svg",
+      icon: "assets/icons/category/List.svg",
     },
   ];
 

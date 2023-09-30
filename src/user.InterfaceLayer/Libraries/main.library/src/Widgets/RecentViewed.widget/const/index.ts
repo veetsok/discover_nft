@@ -5,8 +5,7 @@ export const RecentData = [
     subName: "Alex.",
     volume: "8,456",
     day: "+23,00%",
-    image:
-      "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png",
+    image: "assets/icons/SunGlass1.png",
     minus: true,
     count: "1",
     procent: "+23,00%",
@@ -17,8 +16,7 @@ export const RecentData = [
     subName: "JuliyaS",
     volume: "5,327",
     day: "-32,01%",
-    image:
-      "/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass2.png",
+    image: "assets/icons/SunGlass2.png",
     minus: false,
     count: "2",
     procent: "-32,01%",
