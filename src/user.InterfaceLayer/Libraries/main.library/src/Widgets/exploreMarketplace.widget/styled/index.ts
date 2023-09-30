@@ -21,6 +21,9 @@ export const CategoryFilter = styled.div`
       margin-right: 8px;
     }
   }
+  @media (max-width: 425px) {
+    margin: 0 7px;
+  }
 `;
 
 export const ExploreItems = styled.div`

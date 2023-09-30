@@ -71,6 +71,14 @@ export const ButtonWhite = styled.button<Button>`
     font-size: 10px;
     padding: 11px 17px;
   }
+  @media (max-width: 425px) {
+    font-size: 10px;
+    padding: 10px 15px;
+    & img {
+      width: 16px;
+      height: 16px;
+    }
+  }
 `;
 
 export const Image = styled.img<Button>`
