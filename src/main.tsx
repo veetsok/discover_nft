@@ -4,8 +4,6 @@ import App from "./App.tsx";
 import "./user.InterfaceLayer/assets/styles/default.style.css";
 import "./user.InterfaceLayer/assets/styles/fonts.style.css";
 
-
-
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />
