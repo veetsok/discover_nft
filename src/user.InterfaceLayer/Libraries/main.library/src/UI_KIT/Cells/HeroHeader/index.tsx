@@ -21,21 +21,15 @@ const HeroHeader: React.FC<HeroHeaderProps> = () => {
       <ST.ArrowImage>
         <Image
           type={ImageEnum.enum_defaultImage}
-          src="~/public/icons/HeroHeaderImageArrow.svg"
+          src="assets/icons/HeroHeaderImageArrow.svg"
         />
       </ST.ArrowImage>
 
       <ST.DoteImage>
-        <Image
-          type={ImageEnum.enum_defaultImage}
-          src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/DotOrnament.svg"
-        />
+        <Image type={ImageEnum.enum_defaultImage} src="assets/icons/DotOrnament.svg" />
       </ST.DoteImage>
       <ST.DoteImageSec>
-        <Image
-          type={ImageEnum.enum_defaultImage}
-          src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/DotOrnament.svg"
-        />
+        <Image type={ImageEnum.enum_defaultImage} src="assets/icons/DotOrnament.svg" />
       </ST.DoteImageSec>
     </ST.HeroHeader>
   );
