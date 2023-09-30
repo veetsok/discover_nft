@@ -16,12 +16,12 @@ const Token: React.FC<TokenProps> = () => {
           <ST.TokenBlockImage>
             <Image
               type={ImageEnum.enum_backGroundImage}
-              background="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
+              background="assets/icons/SunGlass1.png"
             />
             <ST.Position>
               <Image
                 type={ImageEnum.enum_backGroundImage}
-                background="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/checkIcon.svg"
+                background="assets/icons/checkIcon.svg"
               />
             </ST.Position>
           </ST.TokenBlockImage>
@@ -39,7 +39,7 @@ const Token: React.FC<TokenProps> = () => {
       <ST.TokenImage>
         <Image
           type={ImageEnum.enum_backGroundImage}
-          background="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/SunGlass1.png"
+          background="assets/icons/SunGlass1.png"
         />
       </ST.TokenImage>
     </ST.Container>
