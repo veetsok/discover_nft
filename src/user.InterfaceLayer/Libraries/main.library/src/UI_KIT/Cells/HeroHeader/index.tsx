@@ -21,7 +21,7 @@ const HeroHeader: React.FC<HeroHeaderProps> = () => {
       <ST.ArrowImage>
         <Image
           type={ImageEnum.enum_defaultImage}
-          src="/src/user.InterfaceLayer/Libraries/main.library/src/assets/icons/HeroHeaderImageArrow.svg"
+          src="~/public/icons/HeroHeaderImageArrow.svg"
         />
       </ST.ArrowImage>
 
